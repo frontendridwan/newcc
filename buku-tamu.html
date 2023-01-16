@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -203,59 +203,85 @@
   </script>
 
   <main class="w-full">
-    <section class="container lg:max-w-6xl mx-auto pt-40 pb-5 px-7">
-      <h3 class="text-blue-900 font-bold md:text-3xl text-xl mb-10">Membership / Keanggotaan</h3>
-      <p class="text-justify">
-        Dengan menjadi Member Udinus Career Center, rekan-rekan akan mendapatkan akses daring (online) untuk memasukkan
-        lamaran ke berbagai perusahaan yang bekerjasama dengan Udinus Career Center. Selain itu, rekan-rekan akan
-        mendapatkan informasi tentang lowongan kerja, program magang, pelatihan, workshop, seminar, webinar, dan
-        berbagai kegiatan rekrutmen di Universitas Dian Nuswantoro. <br><br>Silahkan pelajari halaman ini untuk
-        mendapatkan informasi lengkapnya terkait sistem keanggotaan :
-      </p>
-      <ul class="list-disc ml-8 mt-4">
-        <li><a href="#mahasiswa" class="text-blue-900 underline">Mahasiswa dan Alumni Udinus</a></li>
-        <li><a href="#pekerja" class="text-blue-900 underline">Pencari Kerja (Mahasiswa / Alumni
-            Dari Perguruan Tinggi Lainnya dan Umum)</a></li>
-        <li><a href="#perusahaan" class="text-blue-900 underline">Perusahaan</a></li>
-      </ul>
+    <section class="w-full bg-blue-900 px-4">
+      <div class="w-full pt-32 pb-12 container mx-auto">
+        <div class="w-full max-w-6xl mx-auto">
+          <div class="w-full mb-10">
+            <h1 class="md:w-full mb-2 font-bold text-white text-2xl md:text-4xl">
+              Buku Tamu
+            </h1>
+            <p class="text-sm text-blue-200 sm:text-base">
+              Reservasi Kunjungan ke Udinus Career Center
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <div id="mahasiswa" class="h-2 my-2 border-t-2 border-dashed border-gray-300 sm:mx-auto lg:my-4 max-w-6xl"></div>
-    <section class="container lg:max-w-6xl mx-auto pt-5 pb-5 px-7">
-      <h3 class="text-blue-900 font-semibold md:text-2xl text-xl mb-5">Mahasiswa dan Alumni Udinus</h3>
-      <ul class="list-disc ml-8 mt-4">
-        <li>Akun bersifat <span class="font-bold">GRATIS dan seumur hidup</span>.</li>
-        <li>Jenis akun pada website Udinus Career Center berbeda dengan jenis akun udinus lainnya (berbeda dengan akun
-          Siadin, Kulino, dll) dan secara default <span class="font-bold">Non-Aktif</span>.</li>
-        <li>Bagi mahasiswa / alumni yang belum pernah membuat / memiliki akun pada website Udinus Career Center dapat
-          melakukan aktivasi akun melalui <a href="#" class="text-blue-900 font-semibold underline">link berikut
-            ini</a>.</li>
-      </ul>
+
+    <section class="w-full py-16 lg:pb-28 px-4 lg:px-8 xl:px-24 mx-auto container">
+      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 px-10">
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Nama</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Asal
+            Instansi / Perusahaan</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Nomer
+            HP</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Tanggal</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="date" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Jam</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="time" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Keperluan</label>
+          <textarea name="" id="" rows="3"
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"></textarea>
+        </div>
+        <div class="text-red-500 text-sm font-medium">* Wajib di isi</div>
+      </div>
+      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 px-10">
+        <div>
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Foto Pendukung</label>
+          <input type="file" name="" id=""
+            class="border rounded-lg w-full text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 file:bg-slate-100 file:rounded-tl-lg file:rounded-bl-lg file:bg-slate-100 hover:file:bg-slate-200 file:py-2 file:px-5 file:border-0 file:cursor-pointer">
+        </div>
+        <button type="submit"
+          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-xl hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-slate-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-white" viewBox="0 0 512 512"
+            viewBox="0 0 448 512">
+            <path
+              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+          </svg>
+          Kirim </button>
+      </div>
     </section>
-    <div id="pekerja" class="h-2 my-2 border-t-2 border-dashed border-gray-300 sm:mx-auto lg:my-4 max-w-6xl"></div>
-    <section class="container lg:max-w-6xl mx-auto pt-5 pb-5 px-7">
-      <h3 class="text-blue-900 font-semibold md:text-2xl text-xl mb-5">Pencari Kerja (Mahasiswa / Alumni
-        Dari Perguruan Tinggi Lainnya dan Umum)</h3>
-      <ul class="list-disc ml-8 mt-4">
-        <li>Akun bersifat <span class="font-bold">GRATIS dan seumur hidup</span>.</li>
-        <li>Jenis akun pada website Udinus Career Center berbeda dengan jenis akun udinus lainnya (berbeda dengan akun
-          Siadin, Kulino, dll) dan secara default <span class="font-bold">Non-Aktif</span>.</li>
-        <li>Bagi mahasiswa / alumni yang belum pernah membuat / memiliki akun pada website Udinus Career Center dapat
-          melakukan aktivasi akun melalui <a href="#" class="text-blue-900 font-semibold underline">link berikut
-            ini</a>.</li>
-      </ul>
-    </section>
-    <div id="perusahaan" class="h-2 my-2 border-t-2 border-dashed border-gray-300 sm:mx-auto lg:my-4 max-w-6xl"></div>
-    <section class="container lg:max-w-6xl mx-auto pt-5 pb-5 px-7">
-      <h3 class="text-blue-900 font-semibold md:text-2xl text-xl mb-5">Perusahaan</h3>
-      <ul class="list-disc ml-8 mt-4">
-        <li>Akun bersifat <span class="font-bold">GRATIS dan seumur hidup</span>.</li>
-        <li>Jenis akun pada website Udinus Career Center berbeda dengan jenis akun udinus lainnya (berbeda dengan akun
-          Siadin, Kulino, dll) dan secara default <span class="font-bold">Non-Aktif</span>.</li>
-        <li>Bagi mahasiswa / alumni yang belum pernah membuat / memiliki akun pada website Udinus Career Center dapat
-          melakukan aktivasi akun melalui <a href="#" class="text-blue-900 font-semibold underline">link berikut
-            ini</a>.</li>
-      </ul>
-    </section>
+
   </main>
 
   <!-- ====== Footer Section Start -->
@@ -455,7 +481,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>
