@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -43,23 +43,24 @@
   <nav class="fixed top-0 w-full z-50 border-b-[1px] bg-white">
     <div class="container py-2 px-6 lg:px-0 mx-auto">
       <div class="relative flex items-center justify-around">
-        <img src="./gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
+        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
         <div class="flex items-center">
           <ul class="items-center hidden space-x-4 lg:flex">
-            <li><a href="index.html"
+            <li><a href="home.html"
                 class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 text-blue-900">Home</a>
             </li>
             <li><a href="lowongan.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Lowongan
                 Kerja</a></li>
-            <li><a href="#"
+            <li><a href="campus-hiring.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Campus
                 Hiring</a></li>
-            <li><a href="#"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Magang</a>
+            <li><a href="lowongan-magang.html"
+                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Lowongan
+                Magang</a>
             </li>
-            <li><a href="#"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Webinar</a>
+            <li><a href="event.html"
+                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Event</a>
             </li>
             <li><a href="https://cc.dinus.ac.id/konseling/"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Konseling</a>
@@ -67,14 +68,10 @@
             <li><a href="https://cc.dinus.ac.id/jobfair/"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">JobFair</a>
             </li>
-            <li><a href="https://cc.dinus.ac.id/tracer_study/"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Tracer
-                Study</a></li>
             <li class="group">
-              <button href="#"
+              <a href="profile.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900 inline-flex">
-                lainnya
-                <!-- transform rotate-180 ml-1 h-6 w-6 text-gray-400 transition ease-out duration-200 group-hover:text-gray-500 -->
+                Profile
                 <svg
                   class="transform rotate-0 ml-1 mt-[5px] h-5 w-5 m-auto text-slate-400 transition ease-out duration-200 group-hover:text-blue-900"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -82,37 +79,34 @@
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                     clipRule="evenodd" />
                 </svg>
-              </button>
-              <!-- <div class="absolute hidden bg-white shadow rounded-md pl-4 pr-6 py-4 z-10 group-hover:block"> -->
+              </a>
               <div class="absolute hidden bg-white shadow-md rounded-md z-10 group-hover:block">
                 <div class="flex flex-col py-2">
-                  <a href="perusahaan.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Perusahaan</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Sertifikat</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Survey
-                    Alumni</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">kartu
-                    Alumni</a>
-                  <a href="buku-tamu.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Buku
-                    Tamu</a>
-                  <a href="laporan.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Laporan</a>
-                  <a href="faq.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">FAQ</a>
+                  <a href="profile.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Data
+                    pribadi</a>
+                  <a href="profile-info-akademik.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Informasi
+                    Akademik</a>
+                  <a href="profile-berkas.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Kelengkapan
+                    Berkas</a>
+                  <a href="profile-lamaran.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Status
+                    Lamaran</a>
+                  <a href="profile-event-sertifikat.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Event
+                    dan Sertifikat</a>
+                  <a href="profile-pengaturan.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Pengaturan</a>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         <div class="inline-flex">
-          <a href="login.html"
-            class="pointer-events-auto rounded-lg bg-blue-900 border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-white duration-500 hover:bg-blue-800 hover:border-blue-800">Login</a>
-          <a href="register.html"
-            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 duration-500 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Register</a>
+          <a href="../index.html"
+            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Keluar</a>
           <button id="hideAllMenu"
             class="p-2 ml-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
             onclick="showAllMenu()">
@@ -143,45 +137,25 @@
               </div>
               <nav>
                 <div class="flex flex-col py-2">
-                  <a href="index.html"
+                  <a href="home.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Home</a>
                   <a href="lowongan.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Lowongan
                     Kerja</a>
-                  <a href="#"
+                  <a href="campus-hiring.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Campus
                     Hiring</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Magang</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Webinar</a>
+                  <a href="lowongan-magang.html"
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Lowongan
+                    Magang</a>
+                  <a href="event.html"
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Event</a>
                   <a href="https://cc.dinus.ac.id/konseling/"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Konseling</a>
                   <a href="https://cc.dinus.ac.id/jobfair/"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">JobFair</a>
-                  <a href="https://cc.dinus.ac.id/tracer_study/"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Tracer
-                    Study</a>
-                  <a href="perusahaan.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Perusahaan</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Sertifikat</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Survey
-                    Alumni</a>
-                  <a href="#"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Kartu
-                    Alumni</a>
-                  <a href="buku-tamu.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Buku
-                    Tamu</a>
-                  <a href="laporan.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Laporan</a>
-                  <a href="faq.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">FAQ</a>
-                  <a href="register.html"
-                    class="inline-flex items-center justify-center my-2 mx-5 py-2.5 px-3.5 font-normal tracking-wide transition duration-500 rounded shadow-md bg-white border-blue-600 border-[1px] text-blue-600 hover:bg-blue-700 hover:text-white focus:shadow-outline focus:outline-none">
-                    Register </a>
+                  <a href="profile.html"
+                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-slate-100 transition duration-500">Profile</a>
                 </div>
               </nav>
             </div>
@@ -204,196 +178,109 @@
   </script>
 
   <main class="w-full">
-    <section class="w-full bg-blue-900 px-4">
-      <div class="w-full pt-32 pb-12 container mx-auto">
-        <div class="w-full max-w-4xl mx-auto flex flex-col justify-around">
-          <div class="w-full mb-10 text-center">
-            <h1 class="md:w-full mb-2 font-bold text-white text-2xl md:text-4xl">
-              Frequently Asked Questions
-            </h1>
-            <p class="text-sm text-blue-200 sm:text-base">
-              Cari apa yang ingin anda ketahui disini
-            </p>
-          </div>
-          <div class="flex justify-between flex-col md:flex-row gap-3 rounded-2xl bg-white shadow-md py-7 px-8">
-            <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-              id="" name="" type="text" placeholder="Tulis pertanyaan anda disini ..">
-            <button type="submit"
-              class="flex items-center justify-center h-auto w-full md:w-80 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-slate-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-white" viewBox=" 0 0 512 512">
-                <path
-                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
-              </svg>
-              Cari Pertanyaan </button>
+    <section class="w-full">
+      <div class="w-full bg-blue-900 pt-40 pb-4 h-80"></div>
+    </section>
+    <!-- logo perusahaan -->
+    <section class="w-full px-4 md:px-32 mx-auto container transform -translate-y-16 md:flex-row md:-translate-y-40">
+      <div class="w-full flex">
+        <div class="max-w-xs h-[320px] flex items-center rounded-xl bg-white shadow-md">
+          <div class="text-center md:p-8 p-5">
+            <img src="./gambar/Logo-Layanan-Karir-Alumni-01.png" alt="logo perusahaan">
           </div>
         </div>
+        <div class="w-full max-w-6xl mx-auto pl-10 flex flex-col justify-between">
+          <div>
+            <h1 class="mb-4 w-5/6 mx-auto md:w-full font-bold text-white text-3xl md:text-4xl">
+              Full Time Backend Developer</h1>
+            <h5 class="mb-4 font-bold text-white text-2xl">PT. Dinustek</h5>
+            <!-- tombol apply -->
+            <div class="flex justify-between">
+              <!-- icon logo -->
+              <div class="flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+                <!-- <div class="flex items-center text-sm text-white">
+                    <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-white" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M6 3.75A2.75 2.75 0 018.75 1h2.5A2.75 2.75 0 0114 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 016 4.193V3.75zm6.5 0v.325a41.622 41.622 0 00-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25zM10 10a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V11a1 1 0 00-1-1H10z"
+                        clip-rule="evenodd" />
+                      <path
+                        d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 01-9.274 0C3.985 17.585 3 16.402 3 15.055z" />
+                    </svg>
+                    Full-time
+                  </div> -->
+                <div class="flex items-center text-sm text-white">
+                  <!-- Heroicon name: mini/map-pin -->
+                  <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 00.281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 103 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 002.273 1.765 11.842 11.842 0 00.976.544l.062.029.018.008.006.003zM10 11.25a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Semarang, Indonesia
+                </div>
+                <div class="flex items-center text-sm text-white">
+                  <!-- Heroicon name: mini/currency-dollar -->
+                  <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M10.75 10.818v2.614A3.13 3.13 0 0011.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 00-1.138-.432zM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 00-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152z" />
+                    <path fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-6a.75.75 0 01.75.75v.316a3.78 3.78 0 011.653.713c.426.33.744.74.925 1.2a.75.75 0 01-1.395.55 1.35 1.35 0 00-.447-.563 2.187 2.187 0 00-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 11-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 111.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 01-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 011.653-.713V4.75A.75.75 0 0110 4z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Rp. 3.000.000,-
+                  <!-- Rp. 3.000.000 &ndash; Rp. 5.000.000 -->
+                </div>
+                <div class="flex items-center text-sm text-white">
+                  <!-- Heroicon name: mini/calendar -->
+                  <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  Closing on 9 January 2022
+                </div>
+              </div>
+              <!-- end icon logo -->
+              <button type="submit"
+                class="block py-2 px-5 text-sm font-medium text-center text-blue-900 bg-white rounded-xl hover:bg-slate-100 focus:ring-4 focus:outline-none focus:ring-slate-500">
+                Apply Now </button>
+            </div>
+          </div>
+          <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg relative" role="alert">
+            <strong class="font-bold text-lg">Perhatian!</strong><br>
+            <span class="block sm:inline">
+              <ul class="list-disc ml-8 mt-2">
+                <li>Agar perusahaan bisa memantau proses lamaran anda sebaiknya melamar lewat system.</li>
+                <li>Langsung klik saja <i>Apply Now</i>, maka biodata anda akan tersimpan kedalam database perusahaan.
+                </li>
+                <li>Cek selalu lamaran anda atas konfirmasi dari perusahan.</li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- deskripsi lowongan -->
+    <section class="w-full px-4 md:px-32 mx-auto container flex">
+      <div class="w-full max-w-xs px-5">
+        <h5 class="font-semibold text-lg">Jumlah Kebutuhan</h5>
+        <p> 5 Orang </p>
+        <h5 class="font-semibold text-lg">Pendidikan</h5>
+        <p> S1, S2 </p>
+        <h5 class="font-semibold text-lg">jurusan</h5>
+        <p> Teknik Informatika </p>
+      </div>
+      <div class="w-full px-10">
+        <h5 class="font-semibold text-lg text-center">DESKRIPSI</h5>
+        <h6>Kualifikasi dan Persyaratan</h6>
+        <h6>Tanggung Jawab</h6>
+        <h6>Informasi Lainnya</h6>
       </div>
     </section>
 
-    <section class="w-full py-16 px-4 container mx-auto">
-      <div class="w-full max-w-7xl mx-auto">
-        <h2 class="mb-8 text-xl md:text-2xl tracking-tight font-extrabold text-blue-900">Pertanyaan yang sering
-          ditanyakan kepada kami
-        </h2>
-        <div class="grid pt-8 text-left border-t border-gray-200 md:gap-12 md:grid-cols-2">
-          <div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 " fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Apa itu "Udinus Career Center"?
-              </h3>
-              <p class="text-gray-500">UPT Layanan Karir & Alumni atau Udinus Career Center Merupakan Pusat Layanan dan
-                Karir dan Alumni Universitas Dian Nuswantoro.</p>
-            </div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Apa saja layanan yang diberikan?
-              </h3>
-              <p class="text-gray-500">Kami menyediakan informasi karir, pemagangan atau internship, Campus hiring,
-                Seminar atau Webinar, Workshop atau Pelatihan dan lowongan kerja diberbagai bidang dan lintas perusahaan
-                industri.</p>
-            </div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Bagaimana menjadi member di Udinus Career Center?
-              </h3>
-              <p class="text-gray-500">Ada beberapa jenis membership atau keanggotaan di Udinus Career center. Silahkan
-                pelajari lebih lanjut bagaimana cara kerja <a href="membership.html"
-                  class="font-medium underline text-blue-700 hover:no-underline" target="_blank">membership atau
-                  keanggotaan</a>.</p>
-            </div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Bagaimana cara melamar kerja melalui website Udinus Career Center?
-              </h3>
-              <p class="text-gray-500">silahkan ikuti langkah-langkah berikut untuk melamar kerja.
-              <ul class="list-disc ml-6 text-gray-500">
-                <li><a href="login.html" class="font-medium underline text-blue-700 hover:no-underline"
-                    target="_blank">Login</a> terlebih dahulu menggukanan akun anda sebagai pencari kerja.</li>
-                <li>Kemudian ke menu <span class="font-medium">Lowongan</span> dan cari lowongan kerja yang anda minati.
-                </li>
-                <li>Klik <span class="font-medium">Apply Now</span> untuk melamar kerja.</li>
-                <li>Selanjutnya ke menu <span class="font-medium">Berkas dan Sertifikat</span>.</li>
-                <li>Upload Berkas yang bertanda <span class="font-medium">Wajib</span> dan berkas sesuai ketentuan pada
-                  lowongan kerja yang anda lamar
-                </li>
-                <li>Terakhir, anda dapat memantau status lamaran yang anda ajukan pada menu <span
-                    class="font-medium">Status Lamaran</span></li>
-              </ul>
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Bagaimana perusahaan dapat memposting lowongan kerja?
-              </h3>
-              <p class="text-gray-500">Sebelum dapat memposting lowongan kerja perusahaan / penyedia kerja wajib
-                melakukan <a href="register.html" class="font-medium underline text-blue-700 hover:no-underline"
-                  target="_blank">Registrasi</a> dan <a href="https://api.whatsapp.com/send?phone=6282244158793"
-                  class="font-medium underline text-blue-700 hover:no-underline" target="_blank">konfirmasi</a> ke
-                Udinus Career Center.</p>
-              <p class="text-gray-500">Setelah melakukan Registrasi dan konfirmasi silahkan ikuti langkah-langkah
-                berikut : </p>
-              <ul class="list-disc ml-6 text-gray-500">
-                <li><a href="login.html" class="font-medium underline text-blue-700 hover:no-underline"
-                    target="_blank">Login</a> terlebih dahulu menggukanan akun yang sudah diregistrasi sebagai penyedia
-                  kerja / perusahaan.</li>
-                <li>Kemudian ke menu <span class="font-medium">Lowongan</span> dan klik <span class="font-medium">Tambah
-                    Lowongan Kerja</span>.
-                </li>
-                <li>Isi data lowongan kerja, Selanjutnya klik <span class="font-medium">Posting Lowongan</span>.
-                </li>
-              </ul>
-            </div>
-            <!-- <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                What does the free version include?
-              </h3>
-              <p class="text-gray-500">The <a href="#"
-                  class="font-medium underline text-blue-700 hover:no-underline">free
-                  version</a> of Windster includes a minimal style guidelines, component variants, and a dashboard page
-                with the mobile version alongside it.</p>
-              <p class="text-gray-500">You can use this version for any purposes, because it is
-                open-source under the MIT license.</p>
-            </div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                What is the difference between Windster and Tailwind UI?
-              </h3>
-              <p class="text-gray-500">Although both Windster and Tailwind UI are built for
-                integration with Tailwind CSS, the main difference is in the design, the pages, the extra components and
-                UI elements that Windster includes.</p>
-              <p class="text-gray-500">Additionally, Windster is a project that is still in
-                development, and later it will include both the application, marketing, and e-commerce UI interfaces.
-              </p>
-            </div>
-            <div class="mb-6">
-              <h3 class="flex items-center mb-3 text-lg font-medium text-gray-900">
-                <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Can I use Windster in open-source projects?
-              </h3>
-              <p class="text-gray-500">Generally, it is accepted to use Windster in open-source
-                projects, as long as it is not a UI library, a theme, a template, a page-builder that would be
-                considered as an alternative to Windster itself.</p>
-              <p class="text-gray-500">With that being said, feel free to use this design kit for
-                your open-source projects.</p>
-              <p class="text-gray-500">Find out more information by
-                <a href="#" class="font-medium underline text-blue-700 hover:no-underline" target="_blank">reading the
-                  license</a>.
-              </p>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ====== Footer Section Start -->
@@ -427,6 +314,28 @@
             </p>
           </div>
         </div>
+        <!-- <div class="w-full sm:w-1/2 lg:w-2/12 px-4">
+          <div class="w-full mb-10">
+            <h4 class="text-dark text-lg font-semibold mb-9">Resources</h4>
+            <ul>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">SaaS Development</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">Our Products</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">User Flow</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">User Strategy</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <!-- <div class="w-full sm:w-1/2 lg:w-2/12 px-4">
+          <div class="w-full mb-10">
+            <h4 class="text-dark text-lg font-semibold mb-9">Company</h4>
+            <ul>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">About ilGrids</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">Contact & Support</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">Success History</a></li>
+              <li><a href="javascript:void(0)" class="inline-block text-base text-body-color hover:text-primary leading-loose mb-2">Setting & Privacy</a></li>
+            </ul>
+          </div>
+        </div> -->
         <div class="w-full sm:w-1/2 lg:w-3/12 px-10">
           <div class="w-full mb-5">
             <h4 class="text-dark text-lg font-semibold mb-9">Link Terkait</h4>
@@ -494,6 +403,7 @@
                 </svg>
               </a>
             </div>
+            <!-- <p class="text-base text-body-color">&copy; 2022 Udinus Career Center</p> -->
           </div>
         </div>
       </div>
@@ -528,7 +438,7 @@
         </svg>
       </span>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 max-w-7xl">
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 max-w-7xl">
     <div class="flex mx-auto container">
       <p class="text-base text-body-color mx-auto">&copy; 2022 Udinus Career Center</p>
     </div>
@@ -570,7 +480,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>
