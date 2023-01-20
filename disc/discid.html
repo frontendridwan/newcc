@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DiSC Personality Test 0.2 [Indonesian]</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="content-language" content="id" />
+  <meta name="author" content="Cahya DSN" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta name="keywords" content="DiSC, personality, test, indonesia" />
+  <meta name="description" content="DiSC Personality Test ver 0.2 [Indonesian] created by cahya dsn" />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/w3/w3.css">
+  <link rel="stylesheet" href="../assets/css/w3/w3-theme-indigo.css" media="all" id="disc_css">
+  <script src="../assets/js/jquery.min.js"></script>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    .w3-closebtn {
+      text-decoration: none;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      color: inherit;
+    }
+
+    .w16left {
+      padding-left: 16px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d5">
+      <span class="w3-bar-item"># DiSC v0.2 [Indonesian]</span>
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Themes</button>
+        <div class="w3-dropdown-content w3-white w3-card-4" id="theme">
+          <a href='#' class='w3-bar-item w3-button w3-black color' data-value='black'> </a><a href='#'
+            class='w3-bar-item w3-button w3-brown color' data-value='brown'> </a><a href='#'
+            class='w3-bar-item w3-button w3-pink color' data-value='pink'> </a><a href='#'
+            class='w3-bar-item w3-button w3-orange color' data-value='orange'> </a><a href='#'
+            class='w3-bar-item w3-button w3-amber color' data-value='amber'> </a><a href='#'
+            class='w3-bar-item w3-button w3-lime color' data-value='lime'> </a><a href='#'
+            class='w3-bar-item w3-button w3-green color' data-value='green'> </a><a href='#'
+            class='w3-bar-item w3-button w3-teal color' data-value='teal'> </a><a href='#'
+            class='w3-bar-item w3-button w3-purple color' data-value='purple'> </a><a href='#'
+            class='w3-bar-item w3-button w3-indigo color' data-value='indigo'> </a><a href='#'
+            class='w3-bar-item w3-button w3-blue color' data-value='blue'> </a><a href='#'
+            class='w3-bar-item w3-button w3-cyan color' data-value='cyan'> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w3-container">
+    <form method='post' action='result.php' name="disc">
+      <div class="w3-card-4">
+        <div class='w3-container'>
+          <h2>&nbsp;</h2>
+          <h2>DiSC Personality Test</h1>
+            <div class="w3-row">
+              <div class="w3-col s12">
+                <p>
+                  Tes DISC (<i>Dominance, Influence, Steadiness, Conscientiousness</i>) adalah sebuah alat untuk
+                  memahami tipe-tipe perilaku dan gaya kepribadian, yang pertama kali dikembangkan oleh <i>William
+                    Moulton Marston</i>. Dalam penerapannya di dunia bisnis dan usaha, alat ini telah membuka wawasan
+                  dan pemikiran, baik secara professional maupun secara personal.
+                </p>
+                <div class="w3-container w3-theme-l3 w3-section">
+                  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+                  <h3 class='w3-theme-d2'>INSTRUKSI</h3>
+                  <p>Setiap nomor di bawah ini memuat 4 (empat) kalimat. Tugas anda adalah : <br />
+                  <ol>
+                    <li>Beri tanda/cek pada kolom di bawah huruf [P] di samping kalimat yang PALING menggambarkan diri
+                      anda</li>
+                    <li>Beri tanda/cek pada kolom di bawah huruf [K] di samping kalimat yang PALING TIDAK menggambarkan
+                      diri anda</li>
+                  </ol>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>1</th>
+                      <td class='w16left'>Dapat diandalkan, Dapata dipercaya</td>
+                      <td><input type='radio' class='w3-radio' id='m_1_0' name='m[1]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_1_0' name='l[1]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Garis dasar, Orientasi hasil</td>
+                      <td><input type='radio' class='w3-radio' id='m_1_1' name='m[1]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_1_1' name='l[1]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Jalankan standar yang tinggi, Akurat</td>
+                      <td><input type='radio' class='w3-radio' id='m_1_2' name='m[1]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_1_2' name='l[1]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Kreatif, Unik</td>
+                      <td><input type='radio' class='w3-radio' id='m_1_3' name='m[1]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_1_3' name='l[1]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>2</th>
+                      <td class='w16left'>Optimistik, Visioner</td>
+                      <td><input type='radio' class='w3-radio' id='m_2_0' name='m[2]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_2_0' name='l[2]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Pendamai, Membawa Harmoni</td>
+                      <td><input type='radio' class='w3-radio' id='m_2_1' name='m[2]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_2_1' name='l[2]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Pusat Perhatian, Suka gaul</td>
+                      <td><input type='radio' class='w3-radio' id='m_2_2' name='m[2]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_2_2' name='l[2]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Lembut suara, Pendiam</td>
+                      <td><input type='radio' class='w3-radio' id='m_2_3' name='m[2]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_2_3' name='l[2]' value='N' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>3</th>
+                      <td class='w16left'>Suka bergaul, Antusias</td>
+                      <td><input type='radio' class='w3-radio' id='m_3_0' name='m[3]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_3_0' name='l[3]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Waspada, Hati-hati</td>
+                      <td><input type='radio' class='w3-radio' id='m_3_1' name='m[3]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_3_1' name='l[3]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Memimpin, Pendekatan langsung</td>
+                      <td><input type='radio' class='w3-radio' id='m_3_2' name='m[3]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_3_2' name='l[3]' value='D' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Dapat diramal, Konsisten</td>
+                      <td><input type='radio' class='w3-radio' id='m_3_3' name='m[3]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_3_3' name='l[3]' value='S' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>4</th>
+                      <td class='w16left'>Ingin petunjuk yang jelas</td>
+                      <td><input type='radio' class='w3-radio' id='m_4_0' name='m[4]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_4_0' name='l[4]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Ingin otoritas lebih</td>
+                      <td><input type='radio' class='w3-radio' id='m_4_1' name='m[4]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_4_1' name='l[4]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menghindari konflik</td>
+                      <td><input type='radio' class='w3-radio' id='m_4_2' name='m[4]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_4_2' name='l[4]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Ingin kesempatan baru</td>
+                      <td><input type='radio' class='w3-radio' id='m_4_3' name='m[4]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_4_3' name='l[4]' value='N' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>5</th>
+                      <td class='w16left'>Tarik diri di tengah tekanan</td>
+                      <td><input type='radio' class='w3-radio' id='m_5_0' name='m[5]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_5_0' name='l[5]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Cenderung janji berlebihan</td>
+                      <td><input type='radio' class='w3-radio' id='m_5_1' name='m[5]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_5_1' name='l[5]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Tolak perubahan mendadak</td>
+                      <td><input type='radio' class='w3-radio' id='m_5_2' name='m[5]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_5_2' name='l[5]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Tidak takut bertempur</td>
+                      <td><input type='radio' class='w3-radio' id='m_5_3' name='m[5]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_5_3' name='l[5]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>6</th>
+                      <td class='w16left'>Menceritakan sisi saya</td>
+                      <td><input type='radio' class='w3-radio' id='m_6_0' name='m[6]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_6_0' name='l[6]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menyimpan perasaan saya</td>
+                      <td><input type='radio' class='w3-radio' id='m_6_1' name='m[6]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_6_1' name='l[6]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menjadi frustrasi</td>
+                      <td><input type='radio' class='w3-radio' id='m_6_2' name='m[6]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_6_2' name='l[6]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Siap beroposisi</td>
+                      <td><input type='radio' class='w3-radio' id='m_6_3' name='m[6]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_6_3' name='l[6]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>7</th>
+                      <td class='w16left'>Non-konfrontasi, Menyerah</td>
+                      <td><input type='radio' class='w3-radio' id='m_7_0' name='m[7]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_7_0' name='l[7]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Menuntut, Kasar</td>
+                      <td><input type='radio' class='w3-radio' id='m_7_1' name='m[7]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_7_1' name='l[7]' value='D' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Dipenuhi hal detail</td>
+                      <td><input type='radio' class='w3-radio' id='m_7_2' name='m[7]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_7_2' name='l[7]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Perubahan pada menit terakhir</td>
+                      <td><input type='radio' class='w3-radio' id='m_7_3' name='m[7]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_7_3' name='l[7]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>8</th>
+                      <td class='w16left'>Sering terburu-buru, Merasa tertekan</td>
+                      <td><input type='radio' class='w3-radio' id='m_8_0' name='m[8]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_8_0' name='l[8]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Suka selesaikan apa yang saya mulai</td>
+                      <td><input type='radio' class='w3-radio' id='m_8_1' name='m[8]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_8_1' name='l[8]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Kelola waktu secara efisien</td>
+                      <td><input type='radio' class='w3-radio' id='m_8_2' name='m[8]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_8_2' name='l[8]' value='N' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Masalah sosial itu penting</td>
+                      <td><input type='radio' class='w3-radio' id='m_8_3' name='m[8]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_8_3' name='l[8]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>9</th>
+                      <td class='w16left'>Rendah hati, Sederhana</td>
+                      <td><input type='radio' class='w3-radio' id='m_9_0' name='m[9]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_9_0' name='l[9]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Terbuka memperlihatkan perasaan</td>
+                      <td><input type='radio' class='w3-radio' id='m_9_1' name='m[9]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_9_1' name='l[9]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Puas dengan segalanya</td>
+                      <td><input type='radio' class='w3-radio' id='m_9_2' name='m[9]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_9_2' name='l[9]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Ingin kemajuan</td>
+                      <td><input type='radio' class='w3-radio' id='m_9_3' name='m[9]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_9_3' name='l[9]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>10</th>
+                      <td class='w16left'>Penganalisa yang baik</td>
+                      <td><input type='radio' class='w3-radio' id='m_10_0' name='m[10]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_10_0' name='l[10]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Pendengar yang baik</td>
+                      <td><input type='radio' class='w3-radio' id='m_10_1' name='m[10]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_10_1' name='l[10]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Delegator yang baik</td>
+                      <td><input type='radio' class='w3-radio' id='m_10_2' name='m[10]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_10_2' name='l[10]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Penyemangat yang baik</td>
+                      <td><input type='radio' class='w3-radio' id='m_10_3' name='m[10]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_10_3' name='l[10]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>11</th>
+                      <td class='w16left'>Aturan membuat bosan</td>
+                      <td><input type='radio' class='w3-radio' id='m_11_0' name='m[11]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_11_0' name='l[11]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Aturan membuat aman</td>
+                      <td><input type='radio' class='w3-radio' id='m_11_1' name='m[11]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_11_1' name='l[11]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Aturan membuat adil</td>
+                      <td><input type='radio' class='w3-radio' id='m_11_2' name='m[11]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_11_2' name='l[11]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Aturan perlu dipertanyakan</td>
+                      <td><input type='radio' class='w3-radio' id='m_11_3' name='m[11]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_11_3' name='l[11]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>12</th>
+                      <td class='w16left'>Kerjakan sesuai perintah, Ikut pimpinan</td>
+                      <td><input type='radio' class='w3-radio' id='m_12_0' name='m[12]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_12_0' name='l[12]' value='N' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Ingin segalanya teratur, Rapi</td>
+                      <td><input type='radio' class='w3-radio' id='m_12_1' name='m[12]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_12_1' name='l[12]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Tidak mudah dikalahkan</td>
+                      <td><input type='radio' class='w3-radio' id='m_12_2' name='m[12]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_12_2' name='l[12]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Mudah terangsang, Riang</td>
+                      <td><input type='radio' class='w3-radio' id='m_12_3' name='m[12]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_12_3' name='l[12]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>13</th>
+                      <td class='w16left'>Pemikir logis, Sistematik</td>
+                      <td><input type='radio' class='w3-radio' id='m_13_0' name='m[13]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_13_0' name='l[13]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Optimis, Positif</td>
+                      <td><input type='radio' class='w3-radio' id='m_13_1' name='m[13]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_13_1' name='l[13]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Kompetitif, Suka tantangan</td>
+                      <td><input type='radio' class='w3-radio' id='m_13_2' name='m[13]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_13_2' name='l[13]' value='D' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Memikirkan orang dahulu</td>
+                      <td><input type='radio' class='w3-radio' id='m_13_3' name='m[13]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_13_3' name='l[13]' value='S' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>14</th>
+                      <td class='w16left'>Usaha mengikuti aturan</td>
+                      <td><input type='radio' class='w3-radio' id='m_14_0' name='m[14]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_14_0' name='l[14]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Usaha menjaga keseimbangan</td>
+                      <td><input type='radio' class='w3-radio' id='m_14_1' name='m[14]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_14_1' name='l[14]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Gerak cepat, Tekun</td>
+                      <td><input type='radio' class='w3-radio' id='m_14_2' name='m[14]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_14_2' name='l[14]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Hidup, Suka bicara</td>
+                      <td><input type='radio' class='w3-radio' id='m_14_3' name='m[14]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_14_3' name='l[14]' value='N' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>15</th>
+                      <td class='w16left'>Ingin hal-hal yang pasti</td>
+                      <td><input type='radio' class='w3-radio' id='m_15_0' name='m[15]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_15_0' name='l[15]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Ramah, Mudah bergabung</td>
+                      <td><input type='radio' class='w3-radio' id='m_15_1' name='m[15]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_15_1' name='l[15]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Unik, Bosan rutinitas</td>
+                      <td><input type='radio' class='w3-radio' id='m_15_2' name='m[15]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_15_2' name='l[15]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Aktif mengubah sesuatu</td>
+                      <td><input type='radio' class='w3-radio' id='m_15_3' name='m[15]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_15_3' name='l[15]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>16</th>
+                      <td class='w16left'>Rencanakan masa depan, Bersiap</td>
+                      <td><input type='radio' class='w3-radio' id='m_16_0' name='m[16]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_16_0' name='l[16]' value='N' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menggunakan waktu berkualitas dgn teman</td>
+                      <td><input type='radio' class='w3-radio' id='m_16_1' name='m[16]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_16_1' name='l[16]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Bepergian demi petualangan baru</td>
+                      <td><input type='radio' class='w3-radio' id='m_16_2' name='m[16]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_16_2' name='l[16]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menerima ganjaran atas tujuan yg dicapai</td>
+                      <td><input type='radio' class='w3-radio' id='m_16_3' name='m[16]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_16_3' name='l[16]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>17</th>
+                      <td class='w16left'>Percaya, Mudah percaya pada orang</td>
+                      <td><input type='radio' class='w3-radio' id='m_17_0' name='m[17]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_17_0' name='l[17]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Toleran, Menghormati</td>
+                      <td><input type='radio' class='w3-radio' id='m_17_1' name='m[17]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_17_1' name='l[17]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Petualang, Mengambil resiko</td>
+                      <td><input type='radio' class='w3-radio' id='m_17_2' name='m[17]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_17_2' name='l[17]' value='D' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Gampangan, Mudah setuju</td>
+                      <td><input type='radio' class='w3-radio' id='m_17_3' name='m[17]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_17_3' name='l[17]' value='S' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>18</th>
+                      <td class='w16left'>Menyenangkan, Baik hati</td>
+                      <td><input type='radio' class='w3-radio' id='m_18_0' name='m[18]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_18_0' name='l[18]' value='N' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Tak gentar, Berani</td>
+                      <td><input type='radio' class='w3-radio' id='m_18_1' name='m[18]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_18_1' name='l[18]' value='D' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Tenang, Pendiam</td>
+                      <td><input type='radio' class='w3-radio' id='m_18_2' name='m[18]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_18_2' name='l[18]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Bahagia, Tanpa beban</td>
+                      <td><input type='radio' class='w3-radio' id='m_18_3' name='m[18]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_18_3' name='l[18]' value='I' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>19</th>
+                      <td class='w16left'>Keselamatan, keamanan</td>
+                      <td><input type='radio' class='w3-radio' id='m_19_0' name='m[19]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_19_0' name='l[19]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Sosial, Perkumpulan kelompok</td>
+                      <td><input type='radio' class='w3-radio' id='m_19_1' name='m[19]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_19_1' name='l[19]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Pendidikan, Kebudayaan</td>
+                      <td><input type='radio' class='w3-radio' id='m_19_2' name='m[19]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_19_2' name='l[19]' value='C' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Prestasi, Ganjaran</td>
+                      <td><input type='radio' class='w3-radio' id='m_19_3' name='m[19]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_19_3' name='l[19]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>20</th>
+                      <td class='w16left'>Lakukan dengan benar, Akurasi penting</td>
+                      <td><input type='radio' class='w3-radio' id='m_20_0' name='m[20]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_20_0' name='l[20]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Dibuat menyenangkan</td>
+                      <td><input type='radio' class='w3-radio' id='m_20_1' name='m[20]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_20_1' name='l[20]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Mari kerjakan bersama</td>
+                      <td><input type='radio' class='w3-radio' id='m_20_2' name='m[20]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_20_2' name='l[20]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Hasil adalah penting</td>
+                      <td><input type='radio' class='w3-radio' id='m_20_3' name='m[20]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_20_3' name='l[20]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>21</th>
+                      <td class='w16left'>Akan membeli sesuai dorongan hati</td>
+                      <td><input type='radio' class='w3-radio' id='m_21_0' name='m[21]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_21_0' name='l[21]' value='D' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Akan menunggu, Tanpa tekanan</td>
+                      <td><input type='radio' class='w3-radio' id='m_21_1' name='m[21]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_21_1' name='l[21]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Akan mengusahakan yang kuinginkan</td>
+                      <td><input type='radio' class='w3-radio' id='m_21_2' name='m[21]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_21_2' name='l[21]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Akan berjalan terus tanpa kontrol diri</td>
+                      <td><input type='radio' class='w3-radio' id='m_21_3' name='m[21]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_21_3' name='l[21]' value='C' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>22</th>
+                      <td class='w16left'>Tertawa lepas, Hidup</td>
+                      <td><input type='radio' class='w3-radio' id='m_22_0' name='m[22]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_22_0' name='l[22]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Tenang, Pendiam</td>
+                      <td><input type='radio' class='w3-radio' id='m_22_1' name='m[22]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_22_1' name='l[22]' value='C' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Menyenangkan orang, Mudah setuju</td>
+                      <td><input type='radio' class='w3-radio' id='m_22_2' name='m[22]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_22_2' name='l[22]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Berani, Tak gentar</td>
+                      <td><input type='radio' class='w3-radio' id='m_22_3' name='m[22]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_22_3' name='l[22]' value='D' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowspan='4'>23</th>
+                      <td class='w16left'>Bagian dari kelompok</td>
+                      <td><input type='radio' class='w3-radio' id='m_23_0' name='m[23]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_23_0' name='l[23]' value='S' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Menyemangati orang</td>
+                      <td><input type='radio' class='w3-radio' id='m_23_1' name='m[23]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_23_1' name='l[23]' value='I' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Ingin membuat tujuan</td>
+                      <td><input type='radio' class='w3-radio' id='m_23_2' name='m[23]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_23_2' name='l[23]' value='N' required></td>
+                    </tr>
+                    <tr>
+                      <td class='w16left'>Berusaha sempurna</td>
+                      <td><input type='radio' class='w3-radio' id='m_23_3' name='m[23]' value='N' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_23_3' name='l[23]' value='C' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="w3-col m6 l3">
+                <table class='w3-table'>
+                  <thead>
+                    <tr class='w3-theme-d3'>
+                      <th>No</th>
+                      <th>Gambaran Diri</th>
+                      <th>P</th>
+                      <th>K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="w3-theme-l3">
+                      <th rowspan='4'>24</th>
+                      <td class='w16left'>Saya akan pimpin mereka</td>
+                      <td><input type='radio' class='w3-radio' id='m_24_0' name='m[24]' value='D' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_24_0' name='l[24]' value='N' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Saya akan meyakinkan mereka</td>
+                      <td><input type='radio' class='w3-radio' id='m_24_1' name='m[24]' value='I' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_24_1' name='l[24]' value='I' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Saya akan melaksanakan</td>
+                      <td><input type='radio' class='w3-radio' id='m_24_2' name='m[24]' value='S' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_24_2' name='l[24]' value='S' required></td>
+                    </tr>
+                    <tr class="w3-theme-l3">
+                      <td class='w16left'>Saya dapatkan fakta</td>
+                      <td><input type='radio' class='w3-radio' id='m_24_3' name='m[24]' value='C' required></td>
+                      <td><input type='radio' class='w3-radio' id='l_24_3' name='l[24]' value='N' required></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="w3-row">
+              <div class="w3-col s12">
+                <h6>&nbsp;</h6>
+                <input type='submit' value='proses' class='w3-button w3-round-large w3-theme-d1 w3-right w3-margin-8' />
+              </div>
+            </div>
+            <h2>&nbsp;</h2>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="w3-bottom">
+    <div class="w3-bar w3-theme-d4 w3-center w3-padding">
+      DiSC Personality Test [Indonesian] v0.2 copyright &copy; 2015-2023 by <a href="mailto:cahyadsn@gmail.com">cahya
+        dsn</a><br />
+    </div>
+  </div>
+  <div id="warning" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-red">
+        <span onclick="document.getElementById('warning').style.display='none'"
+          class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright"
+          title="Close Modal">&times;</span>
+        <h2>Warning</h2>
+      </header>
+      <div class="w3-container">
+        <p id='msg'></p>
+      </div>
+      <footer class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <a href='#' onclick="document.getElementById('warning').style.display='none'"
+          class="w3-button w3-grey">close</a>
+      </footer>
+    </div>
+  </div>
+  <script src="../assets/js/disc.id.v2.php?v=2d81048808f7c8fee2a5796708964c32"></script>
+</body>
+
+</html>

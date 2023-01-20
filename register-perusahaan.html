@@ -209,10 +209,11 @@
         <div class="w-full max-w-6xl mx-auto">
           <div class="w-full mb-5 text-center">
             <h1 class="md:w-full mb-2 font-bold text-white text-2xl md:text-4xl">
-              Aktivasi Akun
+              Registrasi Member Perusahaan
             </h1>
             <p class="text-sm text-blue-200 sm:text-base">
-              Bagi Mahasiswa dan Alumni Udinus
+              Bagi perusahaan yang ingin bergabung ke Udinus Career Center, silakan melakukan registrasi dengan mengisi
+              formulir berikut ini.
             </p>
           </div>
         </div>
@@ -220,43 +221,158 @@
     </section>
 
     <section class="w-full pt-16 pb-10 px-4 lg:px-8 xl:px-24 mx-auto container">
-      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 px-10">
-        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg relative" role="alert">
-          <strong class="font-bold text-lg">Perhatian!</strong><br>
-          <p>Bagi Mahasiswa atau Alumni Udinus yang <span class="font-bold">belum memiliki dan melakukan aktivasi
-              akun</span> di website Udinus Career Center silahkan mengisikan <span class="font-bold">Nomor Induk
-              Mahasiswa (NIM) pada form dibawah ini</span>. Kami akan mengirimkan <span class="font-bold">link
-              aktivasi akun ke email mahasiswa</span> (email @mhs.dinus.ac.id) yang dapat digunakan untuk melamar kerja,
-            mendaftar magang dan berbagai layanan yang ada pada website Udinus Career Center.</p>
-          <p><br><b>Catatan : Pastikan NIM yang di input benar, kesalahan input menyebabkan tidak terkirimnya link
-              aktivasi ke email. Silahkan hubungi kami jika ada kendala di <a class="underline"
-                href="https://wa.me/+6282244158793">0822-4415-8793</a></b></p>
-          <!-- <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
-            <svg class="fill-current h-6 w-6 text-red-500" role="button" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20">
-              <title>Close</title>
-              <path
-                d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" />
-            </svg>
-          </span> -->
-        </div>
-
+      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 md:px-10 px-7">
         <div>
-          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Nomor Induk Mahasiswa (NIM)</label>
+          <h5 class="mb-3 font-bold text-xl text-blue-900">Data Perusahaan</h5>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Nama
+            Perusahaan</label>
           <input
             class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text" placeholder="A11.2020.12345">
+            id="" name="" type="text">
         </div>
-
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Deskripsi
+            Perusahaan</label>
+          <textarea name="" id="" rows="3"
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"></textarea>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Website</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Jenis
+            Perusahaan</label>
+          <select id="" name=""
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 ">
+            <option selected disabled>- Pilih Perusahaan -</option>
+            <option>Instansi Pemerintah</option>
+            <option>BUMN / BUMD</option>
+            <option>Institusi / Organisasi Multilateral</option>
+            <option>Organisasi Non-Profit / Lembaga Swadaya Masyarakat</option>
+            <option>Swasta Lokal</option>
+            <option>Swasta Nasional</option>
+            <option>Swasta Internasional</option>
+            <option>Swasta Asing</option>
+            <option>Multinasional</option>
+            <option>Umum / Perorangan</option>
+            <option>Umum / Kelompok Organisasi</option>
+          </select>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Alamat
+            Perusahaan</label>
+          <textarea name="" id="" rows="3"
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"></textarea>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Kota</label>
+          <select id="" name=""
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 ">
+            <option selected disabled>- Pilih Kota -</option>
+            <option>Kota Semarang</option>
+            <option>Kab. Semarang</option>
+          </select>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Kode
+            Pos</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">No
+            Telp</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">No
+            Fax</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="">
+        </div>
+      </div>
+      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 md:px-10 px-7">
+        <div>
+          <h5 class="mb-3 font-bold text-xl text-blue-900">Data Contact Person / PIC</h5>
+        </div>
+        <div>
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Nama Contact Person / PIC</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+        <div>
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">No HP</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+        <div>
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Jabatan</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+      </div>
+      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 md:px-10 px-7">
+        <div>
+          <h5 class="mb-3 font-bold text-xl text-blue-900">Data Login</h5>
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Username</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Password</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="password">
+        </div>
+        <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Konfirmasi
+            Password</label>
+          <input
+            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="password">
+        </div>
         <button type="submit"
-          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-xl hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-slate-500">
+          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-slate-500">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-white" viewBox="0 0 512 512"
             viewBox="0 0 448 512">
             <path
               d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
           </svg>
-          Kirim
-        </button>
+          Kirim </button>
         <div class="text-sm font-medium">Sudah punya akun? <a href="login.html"
             class="underline text-blue-900 font-semibold">Login disini</a></div>
       </div>
