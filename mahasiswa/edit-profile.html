@@ -223,10 +223,14 @@
             <span class="font-semibold text-slate-600">Informasi Akademik</span>
           </a>
           <a href="profile-berkas.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-slate-600">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-5 h-auto fill-slate-600">
+              <path
+                d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z" />
+            </svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-slate-600">
               <path
                 d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z" />
-            </svg>
+            </svg> -->
             <span class="font-semibold text-slate-600">Kelengkapan Berkas</span>
           </a>
           <a href="profile-lamaran.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100">
@@ -272,56 +276,160 @@
             <hr class="border-gray-200 mx-auto w-full">
           </div>
           <div>
-            <label class="block font-semibold mb-2">Nama Lengkap</label>
-            <p class="text-slate-500">Muhammad Ridwan Pratama</p>
+            <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Nama
+              Lengkap</label>
+            <input
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              id="" name="" type="text" placeholder="Nama Anda" value="Muhammad Ridwan Pratama">
           </div>
           <div>
-            <label class="block font-semibold mb-2">NIK</label>
-            <p class="text-slate-500">3374061908000001</p>
+            <label for=""
+              class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">NIK</label>
+            <input
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              id="" name="" type="text" placeholder="3374061908000001" value="3374061908000001">
           </div>
-          <div class="w-full flex flex-col sm:flex-row gap-5">
-            <div class="w-full max-w-[200px]">
-              <label class="block font-semibold mb-2">Tempat Lahir</label>
-              <p class="text-slate-500">Semarang</p>
+          <div>
+            <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Jenis
+              Kelamin</label>
+            <select id="" name=""
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+              <option selected disabled>- Pilih Jenis Kelamin -</option>
+              <option selected>laki-laki</option>
+              <option>Perempuan</option>
+            </select>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <div class="w-full">
+              <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Tempat
+                Lahir</label>
+              <input
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                id="" name="" type="text" placeholder="Semarang" value="Semarang">
             </div>
             <div class="w-full">
-              <label class="block font-semibold mb-2">Tanggal Lahir</label>
-              <p class="text-slate-500">19 Agustus 2022</p>
+              <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Tanggal
+                Lahir</label>
+              <input
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                id="" name="" type="date" value="2022-08-19">
             </div>
           </div>
-          <div>
-            <label class="block font-semibold mb-2">No HP</label>
-            <p class="text-slate-500">089123456789</p>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <div class="w-full">
+              <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">No
+                HP</label>
+              <input
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                id="" name="" type="text" placeholder="089123456789" value="089123456789">
+            </div>
+            <div class="w-full">
+              <label for=""
+                class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
+              <input
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                id="" name="" type="text" placeholder="ridwan@gmail.com" value="ridwan@gmail.com">
+            </div>
           </div>
-          <div>
-            <label class="block font-semibold mb-2">Email</label>
-            <p class="text-slate-500">muh.ridwan@gmail.com</p>
-          </div>
+
           <hr class="border-gray-200 mx-auto w-full">
-          <div class="w-full flex flex-col sm:flex-row gap-5">
-            <div class="w-full max-w-[200px]">
-              <label class="block font-semibold mb-2">Kota</label>
-              <p class="text-slate-500">Semarang</p>
+
+          <h5 class="font-semibold mb-2">Alamat KTP</h5>
+
+          <div class="flex flex-col sm:flex-row gap-5">
+            <div class="w-full">
+              <label for=""
+                class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Provinsi</label>
+              <select id="" name=""
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+                <option selected disabled>- Pilih Provinsi -</option>
+                <option selected>Prov. Jawa Tengah</option>
+                <option>Prov. Jawa Barat</option>
+                <option>Prov. Jawa Timur</option>
+                <option>Daerah Istimewa Yogyakarta</option>
+              </select>
             </div>
             <div class="w-full">
-              <label class="block font-semibold mb-2">Provinsi</label>
-              <p class="text-slate-500">Jawa Tengah</p>
+              <label for=""
+                class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Kota</label>
+              <select id="" name=""
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+                <option selected disabled>- Pilih Kota -</option>
+                <option selected>Kota Semarang</option>
+                <option>Kab. Semarang</option>
+                <option>Kota Bandung</option>
+                <option>Kota Surakarta</option>
+                <option>Kota Yogyakarta</option>
+                <option>Kab. Bekasi</option>
+                <option>Kab. Ketapang</option>
+              </select>
             </div>
           </div>
           <div>
-            <label class="block font-semibold mb-2">Alamat Lengkap</label>
-            <p class="text-slate-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang
-              City, Central Java 50131</p>
+            <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Alamat
+              Lengkap</label>
+            <textarea name="" id="" rows="3"
+              class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang City, Central Java 50131</textarea>
+          </div>
+
+          <hr class="border-gray-200 mx-auto w-full">
+
+          <h5 class="font-semibold mb-2">Alamat Domisili</h5>
+
+          <div class="flex items-start">
+            <div class="flex h-6 items-center">
+              <input id="comments" name="comments" type="checkbox" checked
+                class="h-5 w-5 rounded border-gray-300 text-blue-700 focus:ring-blue-700">
+              <!-- jika checklist (sama) maka disable input kota, provinsi dan alamat lengkap yg domisili -->
+            </div>
+            <div class="ml-3">
+              <label for="comments" class="text-sm font-medium">Alamat domisili sama dengan
+                alamat di KTP</label>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <div class="w-full">
+              <label for=""
+                class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Provinsi</label>
+              <select id="" name="" disabled
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100">
+                <option selected disabled>- Pilih Provinsi -</option>
+                <option selected>Prov. Jawa Tengah</option>
+                <option>Prov. Jawa Barat</option>
+                <option>Prov. Jawa Timur</option>
+                <option>Daerah Istimewa Yogyakarta</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label for=""
+                class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Kota</label>
+              <select id="" name="" disabled
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100">
+                <option selected disabled>- Pilih Kota -</option>
+                <option selected>Kota Semarang</option>
+                <option>Kab. Semarang</option>
+                <option>Kota Bandung</option>
+                <option>Kota Surakarta</option>
+                <option>Kota Yogyakarta</option>
+                <option>Kab. Bekasi</option>
+                <option>Kab. Ketapang</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Alamat
+              Lengkap</label>
+            <textarea name="" id="" rows="3" disabled
+              class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100 disabled:text-slate-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang City, Central Java 50131</textarea>
           </div>
           <div>
             <hr class="border-gray-200 mx-auto w-full mb-5">
-            <button type="submit"
-              class="flex items-center justify-center h-auto py-3 px-3 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-slate-500">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2 fill-white">
-                <path
-                  d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" />
-              </svg>
-              Edit Data Pribadi </button>
+            <a href="profile.html"
+              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mr-2">
+              Simpan Perubahan </a>
+            <a href="profile.html"
+              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring-4 focus:outline-none focus:ring-blue-100">
+              Batalkan </a>
           </div>
         </div>
       </div>
