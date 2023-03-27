@@ -91,6 +91,8 @@
                   <a href="profile-info-akademik.html"
                     class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Informasi
                     Akademik</a>
+                  <a href="profile-pendidikan.html"
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Pendidikan</a>
                   <a href="profile-berkas.html"
                     class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Kelengkapan
                     Berkas</a>
@@ -276,67 +278,198 @@
       <div class="w-full">
         <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5">
           <div>
-            <h5 class="mb-3 font-bold text-xl">Data Pribadi</h5>
-            <p class="mb-4 text-slate-500">Pastikan data pribadi anda benar dan dapat dipertanggungjawabkan</p>
+            <h5 class="mb-3 font-bold text-xl">Data Pendidikan</h5>
+            <p class="mb-4 text-slate-500">Pastikan data Pendidikan anda benar dan dapat dipertanggungjawabkan</p>
             <hr class="border-gray-200 mx-auto w-full">
           </div>
-          <div>
-            <label class="block font-semibold mb-2">Nama Lengkap</label>
-            <p class="text-slate-500">Muhammad Ridwan Pratama</p>
-          </div>
-          <div>
-            <label class="block font-semibold mb-2">NIK</label>
-            <p class="text-slate-500">3374061908000001</p>
-          </div>
-          <div>
-            <label class="block font-semibold mb-2">Jenis Kelamin</label>
-            <p class="text-slate-500">laki-laki</p>
-          </div>
-          <div class="w-full flex flex-col sm:flex-row gap-5">
-            <div class="w-full max-w-[200px]">
-              <label class="block font-semibold mb-2">Tempat Lahir</label>
-              <p class="text-slate-500">Semarang</p>
-            </div>
-            <div class="w-full">
-              <label class="block font-semibold mb-2">Tanggal Lahir</label>
-              <p class="text-slate-500">19 Agustus 2022</p>
-            </div>
-          </div>
-          <div class="w-full flex flex-col sm:flex-row gap-5">
-            <div class="w-full max-w-[200px]">
-              <label class="block font-semibold mb-2">No HP</label>
-              <p class="text-slate-500">089123456789</p>
-            </div>
-            <div class="w-full">
-              <label class="block font-semibold mb-2">Email</label>
-              <p class="text-slate-500">ridwan@gmail.com</p>
-            </div>
-          </div>
 
-          <hr class="border-gray-200 mx-auto w-full">
-
-          <div>
-            <label class="block font-semibold mb-2">Alamat Lengkap</label>
-            <p class="text-slate-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang
-              City, Central Java 50131</p>
-          </div>
-
-          <!-- <div>
-            <label class="block font-semibold mb-2">Alamat Domisili</label>
-            <p class="text-slate-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang
-              City, Central Java 50131</p>
-          </div> -->
-
-          <div>
-            <hr class="border-gray-200 mx-auto w-full mb-5">
-            <a href="edit-profile.html"
+          <div class="flex justify-between items-center">
+            <h6 class="font-semibold text-lg">Pendidikan Formal</h6>
+            <a href="tambah-pendidikan-formal.html"
               class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2 fill-white">
-                <path
-                  d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3"
+                stroke="currentColor" class="w-4 h-4 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
               </svg>
-              Edit Data Pribadi </a>
+              Tambah </a>
           </div>
+
+          <div class="relative bg-slate-50 rounded-xl overflow-hidden">
+            <div style="background-position:10px 10px"
+              class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
+            </div>
+            <div class="relative rounded-xl overflow-auto">
+              <div class="shadow-sm overflow-hidden overflow-x-auto my-5">
+                <table class="border-collapse table-auto w-full text-sm">
+                  <thead>
+                    <tr>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pl-8">
+                        No</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Tingkat</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Sekolah / PT</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Tahun</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pr-8">
+                        Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white">
+                    <tr>
+                      <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                        1</td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        SMP
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        SMP N 2 Semarang
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        2011 - 2014
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                        <a href="#" class="font-semibold text-blue-700 hover:underline">Hapus</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                        2</td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        SMA
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        SMA N 3 Semarang
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        2014 - 2017
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                        <a href="#" class="font-semibold text-blue-700 hover:underline">Hapus</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5">
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <h6 class="font-semibold text-lg">Pendidikan Non Formal</h6>
+            <a href="tambah-pendidikan-nonformal.html"
+              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3"
+                stroke="currentColor" class="w-4 h-4 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              Tambah </a>
+          </div>
+
+          <div class="relative bg-slate-50 rounded-xl overflow-hidden">
+            <div style="background-position:10px 10px"
+              class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
+            </div>
+            <div class="relative rounded-xl overflow-auto">
+              <div class="shadow-sm overflow-hidden overflow-x-auto my-5">
+                <table class="border-collapse table-auto w-full text-sm">
+                  <thead>
+                    <tr>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pl-8">
+                        No</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Nama / Jenis</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Penyelenggara</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Tahun</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pr-8">
+                        Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white">
+                    <tr>
+                      <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                        1</td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        Belajar Al-Quran
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        TPQ Al - Ikhlas
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        2015 - 2019
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                        <a href="#" class="font-semibold text-blue-700 hover:underline">Hapus</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5">
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <h6 class="font-semibold text-lg">Sertifikasi</h6>
+            <a href="tambah-pendidikan-sertifikasi.html"
+              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3"
+                stroke="currentColor" class="w-4 h-4 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              Tambah </a>
+          </div>
+
+          <div class="relative bg-slate-50 rounded-xl overflow-hidden">
+            <div style="background-position:10px 10px"
+              class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
+            </div>
+            <div class="relative rounded-xl overflow-auto">
+              <div class="shadow-sm overflow-hidden overflow-x-auto my-5">
+                <table class="border-collapse table-auto w-full text-sm">
+                  <thead>
+                    <tr>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pl-8">
+                        No</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Nama Sertifikasi</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Lembaga</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                        Nomor</th>
+                      <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pr-8">
+                        Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white">
+                    <tr>
+                      <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                        1</td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        Frontend Developer
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        Udinus Career Center
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4">
+                        210/XII/WB/2020
+                      </td>
+                      <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                        <a href="#" class="font-semibold text-blue-700 hover:underline">Hapus</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5">
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
