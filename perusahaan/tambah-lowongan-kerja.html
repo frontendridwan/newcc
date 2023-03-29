@@ -153,7 +153,7 @@
     <section class="w-full bg-blue-900 px-4">
       <div class="w-full pt-32 pb-12 container mx-auto">
         <div class="w-full max-w-6xl mx-auto">
-          <div class="w-full mb-10 text-center">
+          <div class="w-full mb-10">
             <h1 class="md:w-full mb-2 font-bold text-white text-2xl md:text-4xl">
               Lowongan Kerja
             </h1>
@@ -176,9 +176,69 @@
             Lowongan</label>
           <input
             class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text">
+            id="" name="" type="text" placeholder="Database Admin" value="">
         </div>
+
         <div>
+          <label for=""
+            class="block text-sm font-medium text-gray-700 mb-1 after:content-['*'] after:ml-0.5 after:text-red-500">Tingkat
+            Pendidikan</label>
+          <P class="text-sm text-slate-500 mb-2">Pilih tingkat pendidikan terendah / pilih lebih dari satu tingkat
+            pendidikan</P>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Sekolah Dasar (SD)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Sekolah Menengah Pertama (SMP)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Sekolah Menengah Atas (SMA)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Diploma I (D1)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Diploma II (D2)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Diploma III (D3)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Diploma IV (D4)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Strata I (S1)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Strata II (S2)</label>
+            </div>
+            <div class="flex items-center gap-x-2">
+              <input id="" name="" type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600">
+              <label for="" class="text-gray-700">Strata III (S3)</label>
+            </div>
+          </div>
+        </div>
+        <!-- <div>
           <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Tingkat
             Pendidikan</label>
@@ -189,7 +249,8 @@
             <option>D3</option>
             <option>S1</option>
           </select>
-        </div>
+        </div> -->
+
         <div>
           <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Bidang
@@ -239,10 +300,18 @@
         </div>
         <div>
           <label for=""
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Perkiraan
+            Gaji</label>
+          <input
+            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            id="" name="" type="text" placeholder="3000000" value="">
+        </div>
+        <div>
+          <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Penempatan</label>
           <input
             class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text" placeholder="Contoh : 'Kota Semarang' atau 'Jawa Tengah'" value="">
+            id="" name="" type="text" placeholder="Contoh : Kota Semarang / Jawa Tengah / Pulau Jawa" value="">
         </div>
         <div>
           <label for=""
@@ -252,67 +321,35 @@
             class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
             id="" name="" type="number" placeholder="5 Orang">
         </div>
-      </div>
-      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 md:px-10 px-7">
-        <div>
-          <h5 class="mb-3 font-bold text-xl text-blue-900">Data Contact Person / PIC</h5>
-        </div>
-        <div>
-          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Nama Contact Person / PIC</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text">
-        </div>
-        <div>
-          <label for="" class="block text-sm font-medium text-gray-700 mb-2">No HP</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text">
-        </div>
-        <div>
-          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Jabatan</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text">
-        </div>
-      </div>
-      <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-10 md:px-10 px-7">
-        <div>
-          <h5 class="mb-3 font-bold text-xl text-blue-900">Data Login</h5>
-        </div>
+
         <div>
           <label for=""
-            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Username</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="text">
+            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Kualifikasi
+            dan Persyaratan</label>
+          <textarea name="" id="" rows="3"
+            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">- &#13;&#10;- &#13;&#10;- </textarea>
         </div>
         <div>
-          <label for=""
-            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Password</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="password">
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Tanggungjawab</label>
+          <textarea name="" id="" rows="3"
+            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">1. &#13;&#10;2. &#13;&#10;3. </textarea>
         </div>
         <div>
-          <label for=""
-            class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Konfirmasi
-            Password</label>
-          <input
-            class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
-            id="" name="" type="password">
+          <label for="" class="block text-sm font-medium text-gray-700 mb-2">Poster gambar / Informasi Lainnya</label>
+          <input type="file" name="" id=""
+            class="border rounded-lg w-full text-body-color text-base border-slate-200 shadow-sm file:bg-slate-100 file:rounded-tl-lg file:rounded-bl-lg hover:file:bg-slate-200 file:py-2 file:px-5 file:border-0 cursor-pointer">
         </div>
-        <a href="perusahaan/home.html"
-          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-white" viewBox="0 0 512 512">
-            <path
-              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
-            </path>
-          </svg>
-          Kirim</a>
-        <div class="text-sm font-medium">Sudah punya akun? <a href="login.html"
-            class="underline text-blue-900 font-semibold">Login disini</a></div>
+
+        <div class="mt-3">
+          <a href="lowongan-kerja.html"
+            class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mr-2">
+            Posting </a>
+          <a href="lowongan-kerja.html"
+            class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring-4 focus:outline-none focus:ring-blue-100">
+            Batalkan </a>
+        </div>
       </div>
+
     </section>
 
     <!-- <section class="w-full lg:py-20 pt-20 pb-10">
