@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.tailwindcss.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.min.css"></script>
   <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
@@ -34,6 +39,122 @@
 
     ::-webkit-scrollbar-thumb:hover {
       background-color: hsl(223, 8%, 65%);
+    }
+
+    .dataTables_length {
+      margin: 0 0 10px 20px;
+      float: left;
+    }
+
+    .dataTables_length label select {
+      margin: 0 5px 0 5px;
+      padding: 3px 10px;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+
+    .dataTables_length label select:focus {
+      outline: none;
+      border-color: rgb(2 132 199);
+    }
+
+    .dataTables_filter {
+      margin: 0 20px 10px 0;
+      float: right;
+    }
+
+    .dataTables_filter label input {
+      margin: 0 0 0 5px;
+      padding: 3px 10px;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+
+    .dataTables_filter label input:focus {
+      outline: none;
+      border-color: rgb(2 132 199);
+    }
+
+    .dataTables_info {
+      margin: 10px 0 10px 20px;
+      float: left;
+      font-size: 1rem;
+      /* 0.875rem 14px */
+      line-height: 1.5rem;
+      /* 1.25rem 20px */
+      color: rgb(55 65 81);
+    }
+
+    .dataTables_paginate {
+      float: right;
+      margin: 10px 20px 10px 0;
+      display: flex;
+    }
+
+    #example_paginate.dataTables_paginate.paging_simple_numbers span {
+      display: flex;
+    }
+
+    a#example_previous.paginate_button.previous.disabled {
+      color: rgb(100 116 139);
+      cursor: not-allowed;
+      padding: 7px 10px;
+    }
+
+    a#example_previous.paginate_button.previous {
+      color: rgb(2 6 23);
+      cursor: pointer;
+      padding: 7px 10px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    a#example_next.paginate_button.next.disabled {
+      color: rgb(100 116 139);
+      cursor: not-allowed;
+      padding: 7px 10px;
+    }
+
+    a#example_next.paginate_button.next {
+      color: rgb(2 6 23);
+      cursor: pointer;
+      padding: 7px 10px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    a.paginate_button.current {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 7px 15px;
+      background-color: rgb(2 132 199);
+      color: rgb(255 255 255);
+      border-color: rgb(2 132 199);
+    }
+
+    a.paginate_button.current:hover {
+      background-color: rgb(2 132 199);
+    }
+
+    a.paginate_button {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 7px 15px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+    }
+
+    a.paginate_button:hover {
+      background-color: rgb(226 232 240);
     }
   </style>
 </head>
@@ -294,8 +415,8 @@
             class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
           </div>
           <div class="relative rounded-xl overflow-auto">
-            <div class="shadow-sm overflow-hidden overflow-x-auto my-5">
-              <table class="border-collapse table-auto w-full text-sm">
+            <div class="overflow-hidden overflow-x-auto mt-5 mb-3">
+              <table id="example" class="display" style="width:100%" class="border-collapse table-auto w-full text-sm">
                 <thead>
                   <tr>
                     <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pl-8">
@@ -410,7 +531,259 @@
                       <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
                     </td>
                     <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Pulai Jawa</td>
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      8</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      9</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      10</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      11</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      12</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      13</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      14</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      15</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      16</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      17</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      18</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      19</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      20</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      21</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      22</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      23</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      24</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
+                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
+                      25</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Marketing Executive</td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
+                    </td>
+                    <td class="border-b border-slate-100 text-slate-500 p-4">
+                      Pulau Jawa</td>
                     <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
                       <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
                     </td>
@@ -427,6 +800,67 @@
       </div>
     </section>
     <hr class="my-1 border-gray-300 mx-auto lg:my-2 max-w-7xl w-3/4">
+    <div class="container">
+      <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+        <div class="flex flex-1 justify-between sm:hidden">
+          <a href="#"
+            class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+          <a href="#"
+            class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+        </div>
+        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm text-gray-700">
+              Showing
+              <span class="font-medium">1</span>
+              to
+              <span class="font-medium">10</span>
+              of
+              <span class="font-medium">97</span>
+              results
+            </p>
+          </div>
+          <div>
+            <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+              <a href="#"
+                class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                <span class="sr-only">Previous</span>
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+              <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+              <a href="#" aria-current="page"
+                class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+              <a href="#"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+              <a href="#"
+                class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+              <span
+                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
+              <a href="#"
+                class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+              <a href="#"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
+              <a href="#"
+                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
+              <a href="#"
+                class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                <span class="sr-only">Next</span>
+                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <!-- ====== Footer Section Start -->
@@ -579,6 +1013,10 @@
       </path>
     </svg>
   </button>
+
+  <script>
+    new DataTable('#example');
+  </script>
 
   <script>
     // Get the button
