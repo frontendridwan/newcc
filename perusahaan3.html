@@ -8,10 +8,6 @@
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="stylesheet" href="https://unpkg.com/tableexport@5.2.0/dist/css/tableexport.css">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/tableexport@5.2.0/dist/css/tableexport.min.css"> -->
-
-  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -247,9 +243,9 @@
       <div class="w-full max-w-6xl mx-auto">
         <div class="mb-5">
           <!-- <button></button> -->
-          <!-- <button
+          <button id="exportToExcel"
             class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 mr-2">
-            Excel </button> -->
+            Excel </button>
         </div>
         <div class="relative bg-slate-50 rounded-xl overflow-hidden">
           <div style="background-position:10px 10px"
@@ -557,19 +553,17 @@
     }
   </script>
 
-  <script src="assets/js/xlsx.js"></script>
-  <script src="assets/js/FileSaver.js"></script>
-  <script src="https://unpkg.com/tableexport@5.2.0/dist/js/tableexport.js"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.0/package/dist/xlsx.full.min.js"></script>
+
   <script>
-    new TableExport(document.getElementById("daftarPerusahaan"), {
-      position: "top",
-      trimWhitespace: true,
-      formats: ["xlsx", "csv"],
-      bootstrap: false,
+    document.getElementById("exportToExcel").addEventListener('click', function () {
+      /* Create worksheet from HTML DOM TABLE */
+      var wb = XLSX.utils.table_to_book(document.getElementById("daftarPerusahaan"));
+      /* Export to file (start a download) */
+      XLSX.writeFile(wb, "daftarPerusahaan.xlsx");
     });
   </script>
-  <!-- <script src="https://unpkg.com/tableexport@5.2.0/dist/js/tableexport.min.js"></script> -->
-  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
+
 </body>
 
 </html>
