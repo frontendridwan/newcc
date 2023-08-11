@@ -561,6 +561,17 @@
       var wb = XLSX.utils.table_to_book(document.getElementById("daftarPerusahaan"));
       /* Export to file (start a download) */
       XLSX.writeFile(wb, "daftarPerusahaan.xlsx");
+
+      /* Create worksheet from HTML DOM TABLE */
+      // var table = document.getElementById("daftarPerusahaan");
+      // Menghapus whitespace dari data dalam setiap sel
+      // var cells = table.getElementsByTagName("td");
+      // for (var i = 0; i < cells.length; i++) {
+      //   cells[i].innerText = cells[i].innerText.trim();
+      // }
+      // var wb = XLSX.utils.table_to_book(table);
+      /* Export to file (start a download) */
+      // XLSX.writeFile(wb, "daftarPerusahaan.xlsx");
     });
   </script>
 

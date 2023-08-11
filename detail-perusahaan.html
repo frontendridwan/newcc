@@ -41,9 +41,10 @@
       background-color: hsl(223, 8%, 65%);
     }
 
-    .dataTables_length {
-      margin: 0 0 20px 20px;
-      float: left;
+    /* datatables CSS */
+    #example_length.dataTables_length {
+      margin: 0 0 10px 20px;
+      float: none;
     }
 
     .dataTables_length label select {
@@ -58,9 +59,9 @@
       border-color: rgb(2 132 199);
     }
 
-    .dataTables_filter {
-      margin: 0 20px 20px 0;
-      float: right;
+    #example_filter.dataTables_filter {
+      margin: 0 0 10px 20px;
+      float: none;
     }
 
     .dataTables_filter label input {
@@ -75,22 +76,18 @@
       border-color: rgb(2 132 199);
     }
 
-    .dataTables_info {
+    #example_info.dataTables_info {
       margin: 10px 0 10px 20px;
-      float: left;
+      float: none;
       font-size: 1rem;
-      /* 0.875rem 14px */
       line-height: 1.5rem;
-      /* 1.25rem 20px */
       color: rgb(55 65 81);
     }
 
-    .dataTables_paginate {
-      float: right;
-      margin: 10px 20px 10px 0;
+    #example_paginate.dataTables_paginate.paging_simple_numbers {
+      float: none;
+      margin: 10px 0 10px 20px;
       display: flex;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
     }
 
     #example_paginate.dataTables_paginate.paging_simple_numbers span {
@@ -100,13 +97,13 @@
     a#example_previous.paginate_button.previous.disabled {
       color: rgb(100 116 139);
       cursor: not-allowed;
-      padding: 7px 10px;
+      padding: 5px 10px;
     }
 
     a#example_previous.paginate_button.previous {
       color: rgb(2 6 23);
       cursor: pointer;
-      padding: 7px 10px;
+      padding: 5px 10px;
       border-top-width: 1px;
       border-bottom-width: 1px;
       border-left-width: 1px;
@@ -117,13 +114,13 @@
     a#example_next.paginate_button.next.disabled {
       color: rgb(100 116 139);
       cursor: not-allowed;
-      padding: 7px 10px;
+      padding: 5px 10px;
     }
 
     a#example_next.paginate_button.next {
       color: rgb(2 6 23);
       cursor: pointer;
-      padding: 7px 10px;
+      padding: 5px 10px;
       border-top-width: 1px;
       border-bottom-width: 1px;
       border-right-width: 1px;
@@ -135,7 +132,7 @@
       display: inline-flex;
       align-items: center;
       cursor: pointer;
-      padding: 8px 16px;
+      padding: 5px 15px;
       background-color: rgb(2 132 199);
       color: rgb(255 255 255);
       border-color: rgb(2 132 199);
@@ -149,7 +146,7 @@
       display: inline-flex;
       align-items: center;
       cursor: pointer;
-      padding: 8px 16px;
+      padding: 5px 15px;
       border-top-width: 1px;
       border-bottom-width: 1px;
       border-right-width: 1px;
@@ -157,6 +154,33 @@
 
     a.paginate_button:hover {
       background-color: rgb(226 232 240);
+    }
+
+    @media (min-width: 768px) {
+      #example_length.dataTables_length {
+        margin: 0 0 20px 20px;
+        float: left;
+      }
+
+      #example_filter.dataTables_filter {
+        margin: 0 20px 20px 0;
+        float: right;
+      }
+
+      #example_info.dataTables_info {
+        margin: 10px 0 10px 20px;
+        float: left;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: rgb(55 65 81);
+      }
+
+      #example_paginate.dataTables_paginate.paging_simple_numbers {
+        display: block;
+        float: right;
+        margin: 10px 20px 10px 0;
+        display: flex;
+      }
     }
   </style>
 </head>
@@ -411,12 +435,13 @@
       </div>
       <div class="w-full">
         <h6 class="font-semibold text-lg mb-5">Lowongan Kerja Aktif</h6>
+        <!-- <p>-</p> -->
         <div class="relative bg-slate-50 rounded-xl overflow-hidden">
           <div style="background-position:10px 10px"
             class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
           </div>
           <div class="relative rounded-xl overflow-auto">
-            <div class="overflow-hidden overflow-x-auto mt-5 mb-2">
+            <div class="overflow-hidden overflow-x-auto mt-5 mb-3">
               <table id="example" class="display" style="width:100%" class="border-collapse table-auto w-full text-sm">
                 <thead>
                   <tr>
@@ -800,68 +825,6 @@
 
       </div>
     </section>
-    <hr class="my-1 border-gray-300 mx-auto lg:my-2 max-w-7xl w-3/4">
-    <div class="container">
-      <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
-        <div class="flex flex-1 justify-between sm:hidden">
-          <a href="#"
-            class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
-          <a href="#"
-            class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
-        </div>
-        <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-          <div>
-            <p class="text-sm text-gray-700">
-              Showing
-              <span class="font-medium">1</span>
-              to
-              <span class="font-medium">10</span>
-              of
-              <span class="font-medium">97</span>
-              results
-            </p>
-          </div>
-          <div>
-            <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
-              <a href="#"
-                class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
-                <span class="sr-only">Previous</span>
-                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-              <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-              <a href="#" aria-current="page"
-                class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
-              <a href="#"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
-              <a href="#"
-                class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
-              <span
-                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
-              <a href="#"
-                class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
-              <a href="#"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
-              <a href="#"
-                class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
-              <a href="#"
-                class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
-                <span class="sr-only">Next</span>
-                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </main>
 
   <!-- ====== Footer Section Start -->
@@ -1017,6 +980,7 @@
 
   <script>
     new DataTable('#example');
+    // new DataTable('#example', { buttons: ['copy', 'excel', 'csv', 'pdf', 'print'] });
   </script>
 
   <script>
