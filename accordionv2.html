@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+  <div class="bg-white text-slate-700 p-8 md:p-16 space-y-6 shadow-lg rounded-xl max-w-md md:max-w-lg">
+
+    <h1 class="text-3xl font-bold text-center">Lorem ipsum dolor sit amet.</h1>
+    <p class="text-center my-4 max-w-md mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque
+      sapiente asperiores ut quisquam
+      praesentium quos, laudantium fugit dolor iure.</p>
+
+    <div class="mt-16 divide-y-2 space-y-2">
+
+      <div class="accordion-item cursor-pointer text-gray-500">
+        <div class="flex justify-between p-2 text-xl">
+          Lorem ipsum dolor sit amet.
+          <svg xmlns="http://www.w3.org/2000/svg" class="border rounded-full p-1 flex-none" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path class="line" d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+          </svg>
+        </div>
+        <div class="h-0 overflow-hidden toggle transition duration-300 ease-in-out">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus ab provident odit, fugiat
+          aperiam blanditiis praesentium quasi mollitia aliquid. Sapiente reprehenderit rerum voluptatum facere.
+          <br><br>
+          repellat eligendi nobis error iusto praesentium, sed alias officiis explicabo debitis non dolor repellendus,
+          expedita eos fugiat perspiciatis! Cum, iste! Debitis corrupti animi aspernatur hic?
+        </div>
+      </div>
+
+      <div class="accordion-item cursor-pointer text-gray-500">
+        <div class="flex justify-between p-2 text-xl">
+          Lorem ipsum dolor sit amet.
+          <svg xmlns="http://www.w3.org/2000/svg" class="border rounded-full p-1 flex-none" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path class="line" d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+          </svg>
+        </div>
+        <div class="h-0 overflow-hidden toggle transition duration-300 ease-in-out">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus ab provident odit, fugiat
+          aperiam blanditiis praesentium quasi mollitia aliquid. Sapiente reprehenderit rerum voluptatum facere.
+          <br><br>
+          repellat eligendi nobis error iusto praesentium, sed alias officiis explicabo debitis non dolor repellendus,
+          expedita eos fugiat perspiciatis! Cum, iste! Debitis corrupti animi aspernatur hic?
+        </div>
+      </div>
+
+      <div class="accordion-item cursor-pointer text-gray-500">
+        <div class="flex justify-between p-2 text-xl">
+          Lorem ipsum dolor sit amet.
+          <svg xmlns="http://www.w3.org/2000/svg" class="border rounded-full p-1 flex-none" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path class="line" d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+          </svg>
+        </div>
+        <div class="h-0 overflow-hidden toggle transition duration-300 ease-in-out">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus ab provident odit, fugiat
+          aperiam blanditiis praesentium quasi mollitia aliquid. Sapiente reprehenderit rerum voluptatum facere.
+          <br><br>
+          repellat eligendi nobis error iusto praesentium, sed alias officiis explicabo debitis non dolor repellendus,
+          expedita eos fugiat perspiciatis! Cum, iste! Debitis corrupti animi aspernatur hic?
+        </div>
+      </div>
+
+      <div class="accordion-item cursor-pointer text-gray-500">
+        <div class="flex justify-between p-2 text-xl">
+          Lorem ipsum dolor sit amet.
+          <svg xmlns="http://www.w3.org/2000/svg" class="border rounded-full p-1 flex-none" width="24" height="24"
+            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path class="line" d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+          </svg>
+        </div>
+        <div class="h-0 overflow-hidden toggle transition duration-300 ease-in-out">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus ab provident odit, fugiat
+          aperiam blanditiis praesentium quasi mollitia aliquid. Sapiente reprehenderit rerum voluptatum facere.
+          <br><br>
+          repellat eligendi nobis error iusto praesentium, sed alias officiis explicabo debitis non dolor repellendus,
+          expedita eos fugiat perspiciatis! Cum, iste! Debitis corrupti animi aspernatur hic?
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const toggle = item.querySelector('.toggle');
+        const line = item.querySelector('.line');
+
+        item.classList.toggle('text-gray-500');
+        toggle.classList.toggle('h-0');
+        line.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
