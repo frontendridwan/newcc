@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Udinus Career Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 0.6rem;
+      height: 0.6rem;
+      background-color: hsl(223, 12%, 90%);
+      border-radius: 0.6rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: hsl(223, 12%, 80%);
+      border-radius: 0.6rem;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: hsl(223, 8%, 65%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <svg
+      class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+      aria-hidden="true">
+      <defs>
+        <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+          patternUnits="userSpaceOnUse">
+          <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+        </pattern>
+      </defs>
+      <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+        <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+          stroke-width="0"></path>
+      </svg>
+      <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+    </svg>
+  </div>
+
+  <div class="w-full h-screen p-6" style="grid-template-columns: 1fr 1fr;">
+    <div class="w-full h-full grid place-items-center">
+      <div class="max-w-[550px] p-7 rounded-2xl shadow-2xl bg-white -translate-y-28">
+        <div class="flex font-bold text-lg text-sky-600 gap-4 items-center mb-5 font-sans">
+          <img src="../gambar/grid/gambar12.jpg" alt="" class="w-14 h-14 rounded-full object-cover">
+          Pak Ustad
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-slate-800 font-sans">Salah satu skill berguna yang perlu dilatih yaitu manajemen emosi dan
+            komunikasi lugas.</p>
+          <p class="text-slate-800 font-sans">Daripada ngode-ngode, biasakan untuk menyampaikan maksud secara jelas.
+            Daripada berasumsi, biasakan bertanya dan mengkonfirmasi langsung.</p>
+          <!-- Daripada marah tanpa alasan, biasakan
+            mengkomunikasikan penyebab(nya) kemarahanmu. -->
+        </div>
+        <!-- <div class="mb-5 flex justify-center">
+          <h1 class="font-bold text-center text-3xl text-blue-900">Pilih Jenis Akun Yang Akan Anda Daftarkan</h1>
+        </div>
+        <p class="mb-8 container mx-auto text-center">Selamat datang! Bagi Anda yang akan bergabung sebagai anggota
+          UDINUS CAREER CENTER, silakan melakukan registrasi dengan memilih jenis keanggotaan berikut ini. Pastikan Anda
+          telah mempelajari cara mendaftar menjadi anggota UDINUS CAREER CENTER.
+          <a href="membership.html" class="font-bold text-blue-900 underline">Klik disini untuk mengetahui lebih lengkap
+            terkait keanggotaan dan cara menjadi member UDINUS CAREER CENTER</a>
+        </p> -->
+
+        <!-- <div class="mt-10 flex justify-center">
+          <button class="py-2 px-4 rounded">
+            <a href="login.html" class="font-bold text-blue-900">
+              <div class="flex gap-1 items-center">
+                <div class="w-4"><svg fill="none" viewBox="0 0 24 24" class="stroke-current"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                  </svg></div>Kembali ke halaman Login
+              </div>
+            </a>
+          </button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <button id="btn-back-to-top" type="button"
+    class="z-50 p-3 bg-blue-900 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-800 hover:shadow-lg focus:bg-blue-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-1000 ease-in-out hidden bottom-5 right-5 fixed">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+      </path>
+    </svg>
+  </button>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById('btn-back-to-top');
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = 'block';
+      } else {
+        mybutton.style.display = 'none';
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener('click', backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+
+</html>

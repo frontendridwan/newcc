@@ -6,8 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.tailwindcss.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+  <!-- <script src="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.min.css"></script> -->
+  <script src="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.css"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -34,6 +40,167 @@
 
     ::-webkit-scrollbar-thumb:hover {
       background-color: hsl(223, 8%, 65%);
+    }
+
+    /* datatables CSS */
+    #example_wrapper {
+      margin: 6px 0;
+    }
+
+    #example_wrapper div.grid {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    #example_length.dataTables_length {
+      /* margin: 0 0 5px 20px; */
+      float: none;
+    }
+
+    .dataTables_length label select {
+      margin: 0 5px 0 5px;
+      padding: 3px 10px;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+
+    .dataTables_length label select:focus {
+      outline: none;
+      border-color: rgb(2 132 199);
+    }
+
+    #example_filter.dataTables_filter {
+      /* margin: 0 0 5px 20px; */
+      float: none;
+    }
+
+    .dataTables_filter label input {
+      margin: 0 0 0 5px;
+      padding: 3px 10px;
+      border-width: 1px;
+      border-radius: 5px;
+    }
+
+    .dataTables_filter label input:focus {
+      outline: none;
+      border-color: rgb(2 132 199);
+    }
+
+    #example_info.dataTables_info {
+      /* margin: 0 0 0 20px; */
+      float: none;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: rgb(55 65 81);
+    }
+
+    #example_paginate.dataTables_paginate.paging_simple_numbers {
+      float: none;
+      /* margin: 0 0 5px 20px; */
+      display: flex;
+    }
+
+    #example_paginate.dataTables_paginate.paging_simple_numbers span {
+      display: flex;
+    }
+
+    a#example_previous.paginate_button.previous.disabled {
+      color: rgb(100 116 139);
+      cursor: not-allowed;
+      padding: 5px 10px;
+    }
+
+    a#example_previous.paginate_button.previous {
+      color: rgb(2 6 23);
+      cursor: pointer;
+      padding: 5px 10px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    a#example_next.paginate_button.next.disabled {
+      color: rgb(100 116 139);
+      cursor: not-allowed;
+      padding: 5px 10px;
+    }
+
+    a#example_next.paginate_button.next {
+      color: rgb(2 6 23);
+      cursor: pointer;
+      padding: 5px 10px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    a.paginate_button.current {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 5px 15px;
+      background-color: rgb(2 132 199);
+      color: rgb(255 255 255);
+      border-color: rgb(2 132 199);
+    }
+
+    a.paginate_button.current:hover {
+      background-color: rgb(2 132 199);
+    }
+
+    a.paginate_button {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 5px 15px;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-right-width: 1px;
+    }
+
+    a.paginate_button:hover {
+      background-color: rgb(226 232 240);
+    }
+
+    @media (min-width: 768px) {
+      #example_wrapper {
+        margin: 6px 0 0 0;
+      }
+
+      #example_wrapper div.grid {
+        display: grid;
+        gap: 0;
+      }
+
+      #example_length.dataTables_length {
+        margin: 0 0 5px 20px;
+        float: left;
+      }
+
+      #example_filter.dataTables_filter {
+        margin: 0 20px 5px 0;
+        float: right;
+      }
+
+      #example_info.dataTables_info {
+        margin: 0 0 0 20px;
+        float: left;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: rgb(55 65 81);
+      }
+
+      #example_paginate.dataTables_paginate.paging_simple_numbers {
+        display: block;
+        float: right;
+        margin: 0 20px 5px 0;
+        display: flex;
+      }
     }
   </style>
 </head>
@@ -270,19 +437,19 @@
             class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
           </div>
           <div class="relative rounded-xl overflow-auto">
-            <div class="shadow-sm overflow-hidden overflow-x-auto my-5">
-              <table class="border-collapse table-auto w-full text-sm">
+            <div class="overflow-hidden overflow-x-auto mt-2 mb-1">
+              <table id="example" class="display" style="width:100%" class="border-collapse table-auto w-full text-sm">
                 <thead>
                   <tr>
-                    <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pl-8">
+                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3 pl-8">
                       Posisi</th>
-                    <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
                       Perusahaan</th>
-                    <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
                       Pendidikan</th>
-                    <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3">
+                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
                       Penempatan</th>
-                    <th class="border-b font-medium text-slate-700 text-left p-4 pt-0 pb-3 pr-8">
+                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3 pr-8">
                     </th>
                   </tr>
                 </thead>
@@ -395,7 +562,7 @@
               </table>
             </div>
           </div>
-          <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5">
+          <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl">
           </div>
         </div>
 
@@ -618,6 +785,11 @@
   </button>
 
   <script>
+    new DataTable('#example');
+    // new DataTable('#example', { buttons: ['copy', 'excel', 'csv', 'pdf', 'print'] });
+  </script>
+
+  <script>
     // Get the button
     let mybutton = document.getElementById('btn-back-to-top');
 
@@ -641,7 +813,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>
