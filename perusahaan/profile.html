@@ -150,13 +150,34 @@
   </script>
 
   <main class="w-full">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        aria-hidden="true">
+        <defs>
+          <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+            patternUnits="userSpaceOnUse">
+            <path d="M100 200V.5M.5 .5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+            stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+      </svg>
+    </div>
+
     <section class="w-full flex flex-col lg:flex-row gap-5 pt-32 pb-12 px-4 lg:px-8 xl:px-24 mx-auto container">
       <div class="w-full lg:max-w-[435px]">
-        <div class="border rounded-xl py-5 px-5 mb-5">
-          <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="h-14 mb-3" alt="logo perusahaan">
-          <h5 class="font-bold text-xl">UPT Layanan Karir dan Alumni Universitas Dian Nuswantoro</h5>
+        <div class="border rounded-xl py-5 px-5 mb-5 backdrop-blur-[1px] bg-white/10">
+          <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="max-h-14 mb-4 mx-auto sm:mx-0"
+            alt="logo perusahaan">
+          <h5 class="font-bold text-xl text-center sm:text-left">UPT Layanan Karir dan Alumni Universitas Dian
+            Nuswantoro</h5>
         </div>
-        <div class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center">
+        <div
+          class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center backdrop-blur-[1px] bg-white/10">
           <a href="profile.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100 bg-slate-100">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-blue-700">
               <path
@@ -171,7 +192,7 @@
             </svg>
             <span class="font-semibold text-slate-600">Pengaturan Keamanan</span>
           </a>
-          <a href="../login.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100">
+          <a href="../login.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-red-100">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-auto fill-red-500">
               <path
                 d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z" />
@@ -181,7 +202,8 @@
         </div>
       </div>
       <div class="w-full">
-        <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5">
+        <div
+          class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5 backdrop-blur-[1px] bg-white/10">
           <div>
             <h5 class="mb-3 font-bold text-xl">Data Perusahaan</h5>
             <p class="mb-3 text-slate-500">Pastikan data anda benar dan dapat dipertanggungjawabkan</p>
