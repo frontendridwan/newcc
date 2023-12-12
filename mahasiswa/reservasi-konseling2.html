@@ -216,7 +216,9 @@
           <!-- <input
             class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
             id="" name="" type="date" placeholder="" min="2023-12-06" max="2023-12-20"> -->
-          <div inline-datepicker data-date="12/12/2023" class="rounded-lg" datepicker-buttons></div>
+          <input type="text" inline-datepicker data-date="12/12/2023" class="rounded-lg" datepicker-buttons
+            min="2023-12-06" max="2023-12-20">
+          <!-- <div inline-datepicker data-date="12/12/2023" class="rounded-lg" datepicker-buttons></div> -->
         </div>
 
         <div>
@@ -262,20 +264,48 @@
         <div>
           <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Pelaksanaan</label>
-          <div class="space-y-2">
+
+          <div class="flex space-x-2">
             <div class="flex items-center gap-x-2">
-              <input id="online" name="pelaksanaan" type="radio"
-                class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600">
-              <label for="online" class="block text-sm font-medium leading-6 text-gray-600">Online (Google meet
+              <input id="online" name="pelaksanaan" type="radio" class="hidden peer">
+              <label for="online"
+                class="block text-sm font-medium leading-6 text-gray-600 border px-3 py-2 rounded-lg peer-checked:border-blue-500">Online
+                (Google meet
                 / Zoom)</label>
             </div>
             <div class="flex items-center gap-x-2">
-              <input id="offline" name="pelaksanaan" type="radio"
-                class="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600">
-              <label for="offline" class="block text-sm font-medium leading-6 text-gray-600">Offline (Udinus
+              <input id="offline" name="pelaksanaan" type="radio" class="hidden peer">
+              <label for="offline"
+                class="block text-sm font-medium leading-6 text-gray-600 border px-3 py-2 rounded-lg peer-checked:border-blue-500">Offline
+                (Udinus
                 Career Center)</label>
             </div>
           </div>
+
+          <!-- <div class="space-y-4">
+            <div
+              class="pointer-events-auto w-[21rem] rounded-lg bg-white p-4 text-[0.8125rem] leading-5 shadow-xl shadow-black/5 hover:bg-slate-50 ring-1 ring-slate-700/10">
+              <div class="flex justify-between">
+                <div class="font-medium text-slate-900">Newsletter</div>
+              </div>
+              <div class="mt-1 text-slate-700">Last message sent an hour ago</div>
+              <div class="mt-6 font-medium text-slate-900">621 users</div>
+            </div>
+            <div
+              class="pointer-events-auto w-[21rem] rounded-lg bg-white p-4 text-[0.8125rem] leading-5 shadow-xl shadow-black/5 hover:bg-slate-50 ring-2 ring-indigo-600">
+              <div class="flex justify-between">
+                <div class="font-medium text-slate-900">Existing customers</div>
+                <svg class="h-5 w-5 flex-none" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.707-9.293a1 1 0 0 0-1.414-1.414L9 10.586 7.707 9.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4Z"
+                    fill="#4F46E5"></path>
+                </svg>
+              </div>
+              <div class="mt-1 text-slate-700">Last message sent an hour ago</div>
+              <div class="mt-6 font-medium text-slate-900">1200 users</div>
+            </div>
+          </div> -->
+
         </div>
 
         <div class="mb-3">
