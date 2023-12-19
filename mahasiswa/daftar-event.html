@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -41,11 +41,11 @@
 <body>
 
   <nav class="fixed top-0 w-full z-50 border-b-[1px] bg-white">
-    <div class="container py-2 px-6 lg:px-0 mx-auto">
-      <div class="relative flex items-center lg:justify-around justify-between">
-        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
+    <div class="container py-2 px-6 lg:px-2 mx-auto">
+      <div class="relative flex items-center xl:justify-around justify-between">
+        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="Logo Udinus">
         <div class="flex items-center">
-          <ul class="items-center hidden space-x-4 lg:flex">
+          <ul class="items-center hidden gap-3 xl:gap-4 lg:flex">
             <li><a href="home.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Home</a>
             </li>
@@ -114,11 +114,14 @@
             </li>
           </ul>
         </div>
-        <div class="inline-flex">
+        <div class="inline-flex gap-3">
+          <a href="" class="flex items-center justify-center">
+            <img src="../gambar/FlagUnitedStatespng.png" alt="Indonesia Flag" class="w-8 h-6 border rounded">
+          </a>
           <a href="../index.html"
-            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Keluar</a>
+            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white hidden lg:block">Keluar</a>
           <button id="hideAllMenu"
-            class="p-2 ml-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
+            class="py-2 px-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
             onclick="showAllMenu()">
             <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
               <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z">
@@ -169,7 +172,7 @@
                   <a href="profile.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Profile</a>
                   <a href="../index.html"
-                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-slate-100 transition duration-500">Keluar</a>
+                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-blue-700 hover:text-white transition duration-500">Keluar</a>
                 </div>
               </nav>
             </div>
@@ -234,7 +237,7 @@
           <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">NIM</label>
           <input
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100 disabled:text-slate-500 cursor-not-allowed"
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 disabled:bg-slate-100 disabled:text-slate-500 cursor-not-allowed"
             id="" name="" type="text" placeholder="3374041996000132" value="P31.2022.02512" disabled>
           <p class="text-xs text-slate-500 mt-1 pl-2">Jika terdapat kesalahan ganti di menu <b>Profile</b></p>
         </div>
@@ -243,7 +246,7 @@
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Nama
             Lengkap</label>
           <input
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100 disabled:text-slate-500 cursor-not-allowed"
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 disabled:bg-slate-100 disabled:text-slate-500 disabled:cursor-not-allowed"
             id="" name="" type="text" placeholder="Nama Anda" value="Muhammad Ridwan Pratama" disabled>
           <p class="text-xs text-slate-500 mt-1 pl-2">Jika terdapat kesalahan ganti di menu <b>Profile</b></p>
         </div>
@@ -253,7 +256,7 @@
               class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Tempat
               Lahir</label>
             <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               id="" name="" type="text" placeholder="Semarang" value="Semarang">
           </div>
           <div class="w-full">
@@ -261,7 +264,7 @@
               class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Tanggal
               Lahir</label>
             <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer"
               id="" name="" type="date" value="2022-08-19">
           </div>
         </div>
@@ -270,7 +273,7 @@
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Jenis
             Kelamin</label>
           <select id="" name=""
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer">
             <option selected disabled>- Pilih Jenis Kelamin -</option>
             <option selected>laki-laki</option>
             <option>Perempuan</option>
@@ -280,7 +283,7 @@
           <label for=""
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
           <input
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 disabled:bg-slate-100 disabled:text-slate-500 cursor-not-allowed"
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 disabled:bg-slate-100 disabled:text-slate-500 disabled:cursor-not-allowed"
             id="" name="" type="text" placeholder="email@gmail.com" value="p31202202512@mhs.dinus.ac.id" disabled>
           <p class="text-xs text-slate-500 mt-1 pl-2">Pastikan email mahasiswa <b>Aktif</b> karena bukti pendaftar akan
             dikirim ke email <b>p31202202512@mhs.dinus.ac.id</b></p>
@@ -290,7 +293,7 @@
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">No
             HP (Whatsapp)</label>
           <input
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
             id="" name="" type="text" placeholder="089123456789" value="089123456789">
         </div>
         <div>
@@ -298,11 +301,11 @@
             class="block text-sm font-medium text-gray-700 mb-2 after:content-['*'] after:ml-0.5 after:text-red-500">Alamat
             Lengkap</label>
           <textarea name="" id="" rows="3"
-            class="border rounded-lg w-full py-2 px-5 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang City, Central Java 50131</textarea>
+            class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang City, Central Java 50131</textarea>
         </div>
 
         <a href="detail-event.html"
-          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-slate-500">
+          class="flex items-center justify-center h-auto w-24 py-2 px-5 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-700 focus:ring focus:outline-none focus:ring-blue-300">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2 fill-white" viewBox="0 0 512 512"
             viewBox="0 0 448 512">
             <path
@@ -414,7 +417,6 @@
                 </svg>
               </a>
             </div>
-            <!-- <p class="text-base text-body-color">&copy; 2022 Udinus Career Center</p> -->
           </div>
         </div>
       </div>
@@ -491,7 +493,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>

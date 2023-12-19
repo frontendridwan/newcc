@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -41,13 +41,13 @@
 <body>
 
   <nav class="fixed top-0 w-full z-50 border-b-[1px] bg-white">
-    <div class="container py-2 px-6 lg:px-0 mx-auto">
-      <div class="relative flex items-center lg:justify-around justify-between">
-        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
+    <div class="container py-2 px-6 lg:px-2 mx-auto">
+      <div class="relative flex items-center xl:justify-around justify-between">
+        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="Logo Udinus">
         <div class="flex items-center">
-          <ul class="items-center hidden space-x-4 lg:flex">
+          <ul class="items-center hidden gap-3 xl:gap-4 lg:flex">
             <li><a href="home.html"
-                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 text-blue-900">Home</a>
+                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Home</a>
             </li>
             <li><a href="lowongan-kerja.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Lowongan
@@ -61,10 +61,10 @@
             </li>
             <li class="group">
               <a href="profile.html"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900 inline-flex">
+                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 inline-flex text-blue-900">
                 Profile
                 <svg
-                  class="transform rotate-0 ml-1 mt-[5px] h-5 w-5 m-auto text-slate-400 transition ease-out duration-200 group-hover:text-blue-900"
+                  class="transform rotate-0 ml-1 mt-[5px] h-5 w-5 m-auto text-slate-400-o transition ease-out duration-200 group-hover:text-blue-900 text-blue-900"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path fillRule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -74,7 +74,7 @@
               <div class="absolute hidden bg-white shadow-md rounded-md z-10 group-hover:block">
                 <div class="flex flex-col py-2">
                   <a href="profile.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Data
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Data
                     Perusahaan</a>
                   <a href="profile-pengaturan.html"
                     class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Pengaturan</a>
@@ -83,11 +83,14 @@
             </li>
           </ul>
         </div>
-        <div class="inline-flex">
+        <div class="inline-flex gap-3">
+          <a href="" class="flex items-center justify-center">
+            <img src="../gambar/FlagUnitedStatespng.png" alt="Indonesia Flag" class="w-8 h-6 border rounded">
+          </a>
           <a href="../index.html"
-            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Keluar</a>
+            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white hidden lg:block">Keluar</a>
           <button id="hideAllMenu"
-            class="p-2 ml-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
+            class="py-2 px-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
             onclick="showAllMenu()">
             <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
               <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z">
@@ -125,9 +128,9 @@
                   <a href="testimoni.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Testimoni</a>
                   <a href="profile.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Profile</a>
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Profile</a>
                   <a href="../index.html"
-                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-slate-100 transition duration-500">Keluar</a>
+                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-blue-700 hover:text-white transition duration-500">Keluar</a>
                 </div>
               </nav>
             </div>
@@ -169,15 +172,15 @@
     </div>
 
     <section class="w-full flex flex-col lg:flex-row gap-5 pt-32 pb-12 px-4 lg:px-8 xl:px-24 mx-auto container">
-      <div class="w-full lg:max-w-[435px]">
-        <div class="border rounded-xl py-5 px-5 mb-5 backdrop-blur-[1px] bg-white/10">
+      <div class="w-full lg:max-w-[425px]">
+        <div class="border rounded-xl py-5 px-5 mb-5 backdrop-blur-[1.5px] bg-white/10">
           <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="max-h-14 mb-4 mx-auto sm:mx-0"
             alt="logo perusahaan">
           <h5 class="font-bold text-xl text-center sm:text-left">UPT Layanan Karir dan Alumni Universitas Dian
             Nuswantoro</h5>
         </div>
         <div
-          class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center backdrop-blur-[1px] bg-white/10">
+          class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center backdrop-blur-[1.5px] bg-white/10">
           <a href="profile.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100 bg-slate-100">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-blue-700">
               <path
@@ -203,10 +206,10 @@
       </div>
       <div class="w-full">
         <div
-          class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5 backdrop-blur-[1px] bg-white/10">
+          class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5 backdrop-blur-[1.5px] bg-white/10">
           <div>
             <h5 class="mb-3 font-bold text-xl">Data Perusahaan</h5>
-            <p class="mb-3 text-slate-500">Pastikan data anda benar dan dapat dipertanggungjawabkan</p>
+            <p class="mb-4 text-slate-500">Pastikan data anda benar dan dapat dipertanggungjawabkan</p>
             <div class="text-red-500 text-sm font-medium mb-3">* Apabila dikemudian hari terdapat data yang tidak sesuai
               dengan semestinya kami berhak untuk menonaktifkan akun tanpa adanya pemberitahuan.</div>
             <hr class="border-gray-200 mx-auto w-full">
@@ -296,7 +299,7 @@
           <div>
             <hr class="border-gray-200 mx-auto w-full mb-5">
             <a href="edit-profile.html"
-              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              class="flex inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring focus:outline-none focus:ring-blue-300">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4 mr-2 fill-white">
                 <path
                   d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" />
@@ -407,7 +410,6 @@
                 </svg>
               </a>
             </div>
-            <!-- <p class="text-base text-body-color">&copy; 2022 Udinus Career Center</p> -->
           </div>
         </div>
       </div>
@@ -442,7 +444,7 @@
         </svg>
       </span>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 max-w-7xl">
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 max-w-7xl">
     <div class="flex mx-auto container">
       <p class="text-base text-body-color mx-auto">&copy; 2022 Udinus Career Center</p>
     </div>
@@ -484,7 +486,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>

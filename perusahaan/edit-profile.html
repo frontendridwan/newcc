@@ -41,13 +41,13 @@
 <body>
 
   <nav class="fixed top-0 w-full z-50 border-b-[1px] bg-white">
-    <div class="container py-2 px-6 lg:px-0 mx-auto">
-      <div class="relative flex items-center lg:justify-around justify-between">
-        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
+    <div class="container py-2 px-6 lg:px-2 mx-auto">
+      <div class="relative flex items-center xl:justify-around justify-between">
+        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="Logo Udinus">
         <div class="flex items-center">
-          <ul class="items-center hidden space-x-4 lg:flex">
+          <ul class="items-center hidden gap-3 xl:gap-4 lg:flex">
             <li><a href="home.html"
-                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 text-blue-900">Home</a>
+                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Home</a>
             </li>
             <li><a href="lowongan-kerja.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Lowongan
@@ -61,10 +61,10 @@
             </li>
             <li class="group">
               <a href="profile.html"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900 inline-flex">
+                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 inline-flex text-blue-900">
                 Profile
                 <svg
-                  class="transform rotate-0 ml-1 mt-[5px] h-5 w-5 m-auto text-slate-400 transition ease-out duration-200 group-hover:text-blue-900"
+                  class="transform rotate-0 ml-1 mt-[5px] h-5 w-5 m-auto text-slate-400-o transition ease-out duration-200 group-hover:text-blue-900 text-blue-900"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path fillRule="evenodd"
                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -74,7 +74,7 @@
               <div class="absolute hidden bg-white shadow-md rounded-md z-10 group-hover:block">
                 <div class="flex flex-col py-2">
                   <a href="profile.html"
-                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Data
+                    class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Data
                     Perusahaan</a>
                   <a href="profile-pengaturan.html"
                     class="text-base font-normal tracking-normal pl-3 pr-4 py-1 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Pengaturan</a>
@@ -83,11 +83,14 @@
             </li>
           </ul>
         </div>
-        <div class="inline-flex">
+        <div class="inline-flex gap-3">
+          <a href="" class="flex items-center justify-center">
+            <img src="../gambar/FlagUnitedStatespng.png" alt="Indonesia Flag" class="w-8 h-6 border rounded">
+          </a>
           <a href="../index.html"
-            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Keluar</a>
+            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white hidden lg:block">Keluar</a>
           <button id="hideAllMenu"
-            class="p-2 ml-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
+            class="py-2 px-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
             onclick="showAllMenu()">
             <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
               <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z">
@@ -125,9 +128,9 @@
                   <a href="testimoni.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Testimoni</a>
                   <a href="profile.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Profile</a>
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Profile</a>
                   <a href="../index.html"
-                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-slate-100 transition duration-500">Keluar</a>
+                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-blue-700 hover:text-white transition duration-500">Keluar</a>
                 </div>
               </nav>
             </div>
@@ -150,13 +153,34 @@
   </script>
 
   <main class="w-full">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        aria-hidden="true">
+        <defs>
+          <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+            patternUnits="userSpaceOnUse">
+            <path d="M100 200V.5M.5 .5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+            stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+      </svg>
+    </div>
+
     <section class="w-full flex flex-col lg:flex-row gap-5 pt-32 pb-12 px-4 lg:px-8 xl:px-24 mx-auto container">
-      <div class="w-full lg:max-w-[435px]">
-        <div class="border rounded-xl py-5 px-5 mb-5">
-          <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="h-14 mb-3" alt="logo perusahaan">
-          <h5 class="font-bold text-xl">UPT Layanan Karir dan Alumni Universitas Dian Nuswantoro</h5>
+      <div class="w-full lg:max-w-[425px]">
+        <div class="border rounded-xl py-5 px-5 mb-5 backdrop-blur-[1.5px] bg-white/10">
+          <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="max-h-14 mb-4 mx-auto sm:mx-0"
+            alt="logo perusahaan">
+          <h5 class="font-bold text-xl text-center sm:text-left">UPT Layanan Karir dan Alumni Universitas Dian
+            Nuswantoro</h5>
         </div>
-        <div class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center">
+        <div
+          class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center backdrop-blur-[1.5px] bg-white/10">
           <a href="profile.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100 bg-slate-100">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-blue-700">
               <path
@@ -181,10 +205,11 @@
         </div>
       </div>
       <div class="w-full">
-        <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5">
+        <div
+          class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5 backdrop-blur-[1.5px] bg-white/10">
           <div>
             <h5 class="mb-3 font-bold text-xl">Data Perusahaan</h5>
-            <p class="mb-3 text-slate-500">Pastikan data anda benar dan dapat dipertanggungjawabkan</p>
+            <p class="mb-4 text-slate-500">Pastikan data anda benar dan dapat dipertanggungjawabkan</p>
             <div class="text-red-500 text-sm font-medium mb-3">* Apabila dikemudian hari terdapat data yang tidak sesuai
               dengan semestinya kami berhak untuk menonaktifkan akun tanpa adanya pemberitahuan.</div>
             <hr class="border-gray-200 mx-auto w-full">
@@ -192,16 +217,16 @@
           <div>
             <label class="block font-semibold mb-3">Logo Perusahaan</label>
             <div class="flex items-start md:items-center justify-start flex-col md:flex-row gap-3">
-              <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="h-20 p-3" alt="logo perusahaan">
+              <img src="../gambar/Logo-Layanan-Karir-Alumni-01.png" class="h-16 p-3" alt="logo perusahaan">
               <input type="file" name="" id=""
-                class="border rounded-lg w-full text-body-color text-base border-slate-200 shadow-sm file:bg-slate-100 file:rounded-tl-lg file:rounded-bl-lg hover:file:bg-slate-200 file:py-2 file:px-5 file:border-0 cursor-pointer">
+                class="border rounded-lg w-full text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 file:bg-slate-100 file:rounded-tl-lg file:rounded-bl-lg hover:file:bg-slate-200 file:py-2 file:px-5 file:border-0 cursor-pointer">
             </div>
           </div>
           <div>
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Nama
               Perusahaan</label>
             <input
-              class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               id="" name="" type="text" placeholder="Nama Perusahaan"
               value="UPT Layanan Karir dan Alumni Universitas Dian Nuswantoro">
           </div>
@@ -209,7 +234,7 @@
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Deskripsi
               Perusahaan</label>
             <textarea
-              class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               name="" id=""
               rows="5">UPT Layanan Karir & Alumni atau Udinus Career Center Merupakan Pusat Layanan dan Karir dan Alumni Universitas Dian Nuswantoro. Kami menyediakan informasi karir, pemagangan (internship) dan lowongan kerja diberbagai bidang dan lintas perusahaan industri.</textarea>
           </div>
@@ -217,7 +242,7 @@
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Jenis
               Perusahaan</label>
             <select id="" name=""
-              class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer">
               <option selected disabled>- Pilih Jenis Perusahaan -</option>
               <option>Swasta Lokal</option>
               <option selected>Swasta Nasional</option>
@@ -231,14 +256,14 @@
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="career@cc.dinus.ac.id" value="career@cc.dinus.ac.id">
             </div>
             <div class="w-full">
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Website</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="cc.dinus.ac.id" value="cc.dinus.ac.id">
             </div>
           </div>
@@ -247,7 +272,7 @@
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Kota/Kabupaten</label>
               <select id="" name=""
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer">
                 <option selected disabled>- Pilih Kota -</option>
                 <option selected>Kota Semarang</option>
                 <option>Kab. Semarang</option>
@@ -262,7 +287,7 @@
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Provinsi</label>
               <select id="" name=""
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500">
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer">
                 <option selected disabled>- Pilih Provinsi -</option>
                 <option selected>Prov. Jawa Tengah</option>
                 <option>Prov. Jawa Barat</option>
@@ -275,7 +300,7 @@
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Kode
               Pos</label>
             <input
-              class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               id="" name="" type="text" placeholder="50131" value="50131">
           </div>
 
@@ -283,7 +308,7 @@
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Alamat
               Lengkap</label>
             <textarea
-              class="border rounded-lg w-full py-2 px-3 text-body-color text-base border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               name="" id=""
               rows="3">Kampus Udinus, Jl. Nakula 1 No.5 11, Pendrikan Kidul, Semarang Tengah, Semarang City, Central Java 50131</textarea>
           </div>
@@ -292,14 +317,14 @@
               <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">No
                 Telepon</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="(024) 3520165" value="(024) 3520165">
             </div>
             <div class="w-full">
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Fax</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="(024) 3520165" value="(024) 3520165">
             </div>
           </div>
@@ -312,14 +337,14 @@
               <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Nama
                 Lengkap</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="Sendi Novianto" value="Sendi Novianto">
             </div>
             <div class="w-full">
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Jabatan</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="Kepala Unit" value="Kepala Unit">
             </div>
           </div>
@@ -328,14 +353,14 @@
               <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">No
                 HP</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="082123456789" value="082123456789">
             </div>
             <div class="w-full">
               <label for=""
                 class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Email</label>
               <input
-                class="border rounded-lg w-full py-2 px-3 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+                class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
                 id="" name="" type="text" placeholder="career@cc.dinus.ac.id" value="career@cc.dinus.ac.id">
             </div>
           </div>
@@ -343,10 +368,10 @@
           <div>
             <hr class="border-gray-200 mx-auto w-full mb-5">
             <a href="profile.html"
-              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mr-2">
+              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring focus:outline-none focus:ring-blue-300 mr-2">
               Simpan Perubahan </a>
             <a href="profile.html"
-              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring-4 focus:outline-none focus:ring-blue-100">
+              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring focus:outline-none focus:ring-blue-300">
               Batalkan </a>
           </div>
         </div>
@@ -453,7 +478,6 @@
                 </svg>
               </a>
             </div>
-            <!-- <p class="text-base text-body-color">&copy; 2022 Udinus Career Center</p> -->
           </div>
         </div>
       </div>
@@ -488,7 +512,7 @@
         </svg>
       </span>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 max-w-7xl">
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 max-w-7xl">
     <div class="flex mx-auto container">
       <p class="text-base text-body-color mx-auto">&copy; 2022 Udinus Career Center</p>
     </div>
@@ -530,7 +554,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>

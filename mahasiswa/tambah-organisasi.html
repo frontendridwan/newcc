@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
       theme: {
@@ -41,11 +41,11 @@
 <body>
 
   <nav class="fixed top-0 w-full z-50 border-b-[1px] bg-white">
-    <div class="container py-2 px-6 lg:px-0 mx-auto">
-      <div class="relative flex items-center lg:justify-around justify-between">
-        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="">
+    <div class="container py-2 px-6 lg:px-2 mx-auto">
+      <div class="relative flex items-center xl:justify-around justify-between">
+        <img src="../gambar/Logo-Udinus-Official-01.png" class="w-11 h-11 lg:hidden" alt="Logo Udinus">
         <div class="flex items-center">
-          <ul class="items-center hidden space-x-4 lg:flex">
+          <ul class="items-center hidden gap-3 xl:gap-4 lg:flex">
             <li><a href="home.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Home</a>
             </li>
@@ -114,11 +114,14 @@
             </li>
           </ul>
         </div>
-        <div class="inline-flex">
+        <div class="inline-flex gap-3">
+          <a href="" class="flex items-center justify-center">
+            <img src="../gambar/FlagUnitedStatespng.png" alt="Indonesia Flag" class="w-8 h-6 border rounded">
+          </a>
           <a href="../index.html"
-            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white ml-2 hidden lg:block">Keluar</a>
+            class="pointer-events-auto rounded-lg bg-white border-blue-900 border-[1px] py-2.5 px-3.5 text-[0.8125rem] font-semibold leading-5 text-blue-900 hover:bg-blue-900 hover:border-blue-900 hover:text-white hidden lg:block">Keluar</a>
           <button id="hideAllMenu"
-            class="p-2 ml-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
+            class="py-2 px-2 transition duration-500 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50 lg:hidden"
             onclick="showAllMenu()">
             <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
               <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z">
@@ -169,7 +172,7 @@
                   <a href="profile.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Profile</a>
                   <a href="../index.html"
-                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-slate-100 transition duration-500">Keluar</a>
+                    class="my-2 mx-5 py-2.5 px-3.5 rounded-lg border border-blue-900 text-blue-900 hover:bg-blue-700 hover:text-white transition duration-500">Keluar</a>
                 </div>
               </nav>
             </div>
@@ -192,18 +195,38 @@
   </script>
 
   <main class="w-full">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        aria-hidden="true">
+        <defs>
+          <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+            patternUnits="userSpaceOnUse">
+            <path d="M100 200V.5M.5 .5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+            stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+      </svg>
+    </div>
+
     <section class="w-full flex flex-col lg:flex-row gap-5 pt-32 pb-12 px-4 lg:px-8 xl:px-24 mx-auto container">
       <div class="w-full lg:max-w-[425px]">
-        <div class="flex gap-3 items-center border rounded-xl py-5 px-5 mb-5">
+        <div class="sm:flex gap-3 items-center border rounded-xl py-5 px-5 mb-5 backdrop-blur-[1px] bg-white/10">
           <div>
-            <img src="../gambar/user1-128x128.jpg" class="w-14 h-14 rounded-full" alt="mahasiswa profile">
+            <img src="https://mahasiswa.dinus.ac.id/images/foto/A/A11/2017/A11.2017.10787.jpg"
+              class="w-14 h-14 mx-auto rounded-full object-cover object-top mb-4 sm:mb-0" alt="mahasiswa profile">
           </div>
-          <div>
+          <div class="text-center sm:text-left">
             <h5 class="font-bold text-xl mb-2">Muhammad Ridwan Pratama</h5>
             <p class="text-slate-500">P31.2022.02512</p>
           </div>
         </div>
-        <div class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center">
+        <div
+          class="flex flex-col gap-3 mx-auto border rounded-xl py-5 px-5 justify-center backdrop-blur-[1px] bg-white/10">
           <a href="profile.html" class="flex items-center gap-4 py-2 px-3 rounded-lg hover:bg-slate-100">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-auto fill-slate-600">
               <path
@@ -272,7 +295,8 @@
         </div>
       </div>
       <div class="w-full">
-        <div class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5">
+        <div
+          class="mb-3 flex flex-col gap-5 mx-auto max-w-4xl border rounded-xl py-5 px-5 backdrop-blur-[1px] bg-white/10">
           <div>
             <h5 class="mb-3 font-bold text-xl">Informasi Akademik</h5>
             <p class="mb-4 text-slate-500">Pastikan informasi akademik anda benar dan dapat dipertanggungjawabkan</p>
@@ -286,30 +310,30 @@
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Nama
               Organisasi</label>
             <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               id="" name="" type="text" placeholder="Nama Organisasi" value="">
           </div>
           <div>
             <label for=""
               class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Jabatan</label>
             <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700"
               id="" name="" type="text" placeholder="Ketua Umum" value="">
           </div>
           <div>
             <label for="" class="block mb-2 font-semibold after:content-['*'] after:ml-0.5 after:text-red-500">Tanggal
               Mulai Organisasi</label>
             <input
-              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500"
+              class="border rounded-lg w-full py-2 px-5 text-body-color border-slate-200 shadow-sm outline-none focus-visible:shadow-none focus:border-blue-500 focus:ring-1 focus:ring-blue-700 cursor-pointer"
               id="" name="" type="date" placeholder="2023-04-01" value="">
           </div>
           <div>
             <hr class="border-gray-200 mx-auto w-full mb-5">
             <a href="profile-info-akademik.html"
-              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mr-2">
+              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring focus:outline-none focus:ring-blue-300 mr-2">
               Simpan Perubahan </a>
             <a href="profile-info-akademik.html"
-              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring-4 focus:outline-none focus:ring-blue-100">
+              class="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-blue-900 rounded-lg hover:bg-slate-100 focus:ring focus:outline-none focus:ring-blue-300">
               Batalkan </a>
           </div>
         </div>
@@ -416,7 +440,6 @@
                 </svg>
               </a>
             </div>
-            <!-- <p class="text-base text-body-color">&copy; 2022 Udinus Career Center</p> -->
           </div>
         </div>
       </div>
@@ -451,7 +474,7 @@
         </svg>
       </span>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 max-w-7xl">
+    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 max-w-7xl">
     <div class="flex mx-auto container">
       <p class="text-base text-body-color mx-auto">&copy; 2022 Udinus Career Center</p>
     </div>
@@ -493,7 +516,7 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+  <!-- <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script> -->
 </body>
 
 </html>
