@@ -6,13 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Udinus Career Center</title>
-  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.tailwindcss.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- <script src="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.min.css"></script> -->
-  <script src="https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.css"></script>
   <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
   <script>
     tailwind.config = {
@@ -41,167 +35,6 @@
     ::-webkit-scrollbar-thumb:hover {
       background-color: hsl(223, 8%, 65%);
     }
-
-    /* datatables CSS */
-    #example_wrapper {
-      margin: 6px 0;
-    }
-
-    #example_wrapper div.grid {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    #example_length.dataTables_length {
-      /* margin: 0 0 5px 20px; */
-      float: none;
-    }
-
-    .dataTables_length label select {
-      margin: 0 5px 0 5px;
-      padding: 3px 10px;
-      border-width: 1px;
-      border-radius: 5px;
-    }
-
-    .dataTables_length label select:focus {
-      outline: none;
-      border-color: rgb(2 132 199);
-    }
-
-    #example_filter.dataTables_filter {
-      /* margin: 0 0 5px 20px; */
-      float: none;
-    }
-
-    .dataTables_filter label input {
-      margin: 0 0 0 5px;
-      padding: 3px 10px;
-      border-width: 1px;
-      border-radius: 5px;
-    }
-
-    .dataTables_filter label input:focus {
-      outline: none;
-      border-color: rgb(2 132 199);
-    }
-
-    #example_info.dataTables_info {
-      /* margin: 0 0 0 20px; */
-      float: none;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: rgb(55 65 81);
-    }
-
-    #example_paginate.dataTables_paginate.paging_simple_numbers {
-      float: none;
-      /* margin: 0 0 5px 20px; */
-      display: flex;
-    }
-
-    #example_paginate.dataTables_paginate.paging_simple_numbers span {
-      display: flex;
-    }
-
-    a#example_previous.paginate_button.previous.disabled {
-      color: rgb(100 116 139);
-      cursor: not-allowed;
-      padding: 5px 10px;
-    }
-
-    a#example_previous.paginate_button.previous {
-      color: rgb(2 6 23);
-      cursor: pointer;
-      padding: 5px 10px;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-left-width: 1px;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-
-    a#example_next.paginate_button.next.disabled {
-      color: rgb(100 116 139);
-      cursor: not-allowed;
-      padding: 5px 10px;
-    }
-
-    a#example_next.paginate_button.next {
-      color: rgb(2 6 23);
-      cursor: pointer;
-      padding: 5px 10px;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-right-width: 1px;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
-
-    a.paginate_button.current {
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-      padding: 5px 15px;
-      background-color: rgb(2 132 199);
-      color: rgb(255 255 255);
-      border-color: rgb(2 132 199);
-    }
-
-    a.paginate_button.current:hover {
-      background-color: rgb(2 132 199);
-    }
-
-    a.paginate_button {
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-      padding: 5px 15px;
-      border-top-width: 1px;
-      border-bottom-width: 1px;
-      border-right-width: 1px;
-    }
-
-    a.paginate_button:hover {
-      background-color: rgb(226 232 240);
-    }
-
-    @media (min-width: 768px) {
-      #example_wrapper {
-        margin: 6px 0 0 0;
-      }
-
-      #example_wrapper div.grid {
-        display: grid;
-        gap: 0;
-      }
-
-      #example_length.dataTables_length {
-        margin: 0 0 5px 20px;
-        float: left;
-      }
-
-      #example_filter.dataTables_filter {
-        margin: 0 20px 5px 0;
-        float: right;
-      }
-
-      #example_info.dataTables_info {
-        margin: 0 0 0 20px;
-        float: left;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        color: rgb(55 65 81);
-      }
-
-      #example_paginate.dataTables_paginate.paging_simple_numbers {
-        display: block;
-        float: right;
-        margin: 0 20px 5px 0;
-        display: flex;
-      }
-    }
   </style>
 </head>
 
@@ -220,10 +53,10 @@
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Lowongan
                 Kerja</a></li>
             <li><a href="campus-hiring.html"
-                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 text-blue-900">Campus
+                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Campus
                 Hiring</a></li>
             <li><a href="magang.html"
-                class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Magang</a>
+                class="text-base font-normal tracking-normal text-slate-400-o duration-200 hover:text-blue-900 text-blue-900">Magang</a>
             </li>
             <li><a href="webinar.html"
                 class="text-base font-normal tracking-normal text-slate-400 duration-200 hover:text-blue-900">Webinar</a>
@@ -322,10 +155,10 @@
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Lowongan
                     Kerja</a>
                   <a href="campus-hiring.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Campus
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Campus
                     Hiring</a>
                   <a href="magang.html"
-                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Magang</a>
+                    class="text-base font-normal tracking-wide px-6 py-2 text-slate-400-o duration-200 hover:text-blue-900 hover:bg-slate-100 text-blue-900 bg-slate-100">Magang</a>
                   <a href="webinar.html"
                     class="text-base font-normal tracking-wide px-6 py-2 text-slate-400 duration-200 hover:text-blue-900 hover:bg-slate-100">Webinar</a>
                   <a href="konseling.html"
@@ -382,10 +215,10 @@
   <main class="w-full">
     <section class="w-full bg-blue-900 px-4">
       <div class="w-full pt-32 pb-12 container mx-auto">
-        <div class="w-full max-w-6xl mx-auto flex flex-col justify-around ">
+        <div class="w-full max-w-6xl mx-auto flex flex-col justify-around">
           <div class="w-full mb-10">
             <h1 class="md:w-full mb-2 font-bold text-white text-2xl md:text-4xl">
-              Campus Hiring
+              Lowongan Magang Mahasiswa
             </h1>
             <p class="text-sm text-blue-200 sm:text-base">
               Cari pekerjaan yang sesuai dengan keinginan anda
@@ -416,7 +249,7 @@
                 <path
                   d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
               </svg>
-              Cari Campus Hiring </button>
+              Cari Magang </button>
           </div>
         </div>
       </div>
@@ -424,7 +257,13 @@
 
     <section class="w-full flex flex-col py-16 lg:pb-28 px-4 lg:px-8 xl:px-24 mx-auto container gap-10">
 
-      <!-- <div class="w-full max-w-6xl mx-auto flex gap-2 mb-3 justify-end items-center">
+      <!-- <div class="mb-3 text-center mx-auto max-w-4xl">
+        <h3 class="text-2xl md:text-3xl mb-3 font-bold">Lowongan Kerja Terbaru</h3>
+        <p class="text-sm text-gray-500 sm:text-base">
+          Cari pekerjaan yang sesuai dengan keinginan anda
+        </p>
+      </div> -->
+      <div class="w-full max-w-6xl mx-auto flex gap-2 mb-3 justify-end items-center">
         <a href="lowongan.html">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-1 fill-blue-900" viewBox="0 0 448 512">
             <path
@@ -437,131 +276,124 @@
               d="M296 32h192c13.255 0 24 10.745 24 24v160c0 13.255-10.745 24-24 24H296c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24zm-80 0H24C10.745 32 0 42.745 0 56v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24zM0 296v160c0 13.255 10.745 24 24 24h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm296 184h192c13.255 0 24-10.745 24-24V296c0-13.255-10.745-24-24-24H296c-13.255 0-24 10.745-24 24v160c0 13.255 10.745 24 24 24z" />
           </svg>
         </a>
-      </div> -->
+      </div>
 
-      <div class="w-full max-w-6xl mx-auto">
-        <h6 class="font-semibold text-lg mb-5">Lowongan Kerja</h6>
-
-        <div class="relative bg-slate-50 rounded-xl overflow-hidden">
-          <div style="background-position:10px 10px"
-            class="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))]">
+      <div
+        class="w-full max-w-md md:max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./gambar/loker-magang.png"
+              alt="Modern building architecture">
           </div>
-          <div class="relative rounded-xl overflow-auto">
-            <div class="overflow-hidden overflow-x-auto mt-2 mb-1">
-              <table id="example" class="display" style="width:100%" class="border-collapse table-auto w-full text-sm">
-                <thead>
-                  <tr>
-                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3 pl-8">
-                      No</th>
-                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
-                      Posisi</th>
-                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
-                      Pendidikan</th>
-                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3">
-                      Penempatan</th>
-                    <th class="border-b font-medium text-slate-700 text-left pt-2 pb-3 pr-8">
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="bg-white">
-                  <tr>
-                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
-                      1
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Database Administrator
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      <span class="bg-red-200 text-red-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">D3</span>,
-                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>,
-                      <span class="bg-green-200 text-green-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S2</span>
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Semarang
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
-                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
-                      2
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Frontend Developer
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      <span
-                        class="bg-orange-200 text-orange-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">D4</span>,
-                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Semarang
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
-                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
-                      3
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      CEO Personal Assistant</td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      <span class="bg-red-200 text-red-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">D3</span>,
-                      <span class="bg-blue-200 text-blue-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">S1</span>
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Jawa Tengah
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
-                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
-                      4
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Admin CS Online
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      <span
-                        class="bg-yellow-200 text-yellow-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">SMA/SMK</span>
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Semarang
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
-                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="font-semibold border-b border-slate-100 text-slate-500 p-4 pl-8">
-                      5
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Customer Service
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      <span class="bg-red-200 text-red-900 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">D3</span>
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4">
-                      Semarang
-                    </td>
-                    <td class="border-b border-slate-100 text-slate-500 p-4 pr-8">
-                      <a href="detail-lowongan.html" class="font-semibold text-blue-700 hover:underline">Lihat</a>
-                    </td>
-                  </tr>
-
-                </tbody>
-              </table>
+          <div class="pt-8 pb-5 px-5">
+            <a href="#"
+              class="block text-lg mb-2 uppercase leading-tight font-bold text-blue-900 hover:underline">Database
+              Administrator</a>
+            <div class="mb-3 tracking-wide text-black font-semibold">PT. Dinustek</div>
+            <p class="my-2 text-slate-500">-</p>
+            <div class="flex mb-3">
+              <div class="flex items-center mr-4">
+                <svg class="w-4 h-4 mr-1 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z" />
+                </svg>
+                <p class="font-medium text-gray-700">S1/D3</p>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-1 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
+                </svg>
+                <p class="font-medium text-gray-700">31 Sep 2022</p>
+              </div>
             </div>
-          </div>
-          <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl">
+            <a href="detail-lowongan.html"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Detail <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
           </div>
         </div>
+      </div>
+
+      <div
+        class="w-full max-w-md md:max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./gambar/bannervjf.png"
+              alt="Modern building architecture">
+          </div>
+          <div class="pt-8 pb-5 px-5">
+            <a href="#"
+              class="block text-lg mb-2 uppercase leading-tight font-bold text-blue-900 hover:underline">Database
+              Administrator</a>
+            <div class="mb-3 tracking-wide text-black font-semibold">PT. Dinustek</div>
+            <p class="my-2 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt magnam
+              incidunt esse dolores aperiam pariatur ut molestias.</p>
+            <div class="flex mb-3">
+              <div class="flex items-center mr-4">
+                <svg class="w-4 h-4 mr-1 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z" />
+                </svg>
+                <p class="font-medium text-gray-700">S1/D3</p>
+              </div>
+              <div class="flex items-center">
+                <svg class="w-4 h-4 mr-1 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
+                </svg>
+                <p class="font-medium text-gray-700">31 Sep 2022</p>
+              </div>
+            </div>
+            <a href="detail-lowongan.html"
+              class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-900 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+              Detail <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border border-gray-200">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./gambar/pmmb.jpeg"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accomodation for your team</a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border border-gray-200">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="./gambar/bannervjf.png"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accomodation for your team</a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.</p>
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -717,11 +549,6 @@
       </path>
     </svg>
   </button>
-
-  <script>
-    new DataTable('#example');
-    // new DataTable('#example', { buttons: ['copy', 'excel', 'csv', 'pdf', 'print'] });
-  </script>
 
   <script>
     // Get the button
